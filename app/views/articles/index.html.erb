@@ -1,27 +1,26 @@
-<h1>Articles listing page</h1>
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Descrition</th>
-      <th colspan="3" >Actions</th>
-    </tr>
-  </thead>
-  <tbody>
+<div id="page-content" class="w-100 wh-100">
+  <h1 class="text-center pt-4">Articles listing page</h1>
+  <div class="container">
     <% @articles.each do |article| %>
-      <tr>
-        <td><%= article.title %></td>
-        <td><%= article.description %></td>
-        <td><%= link_to 'Show', article_path(article) %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <%# 出於安全考慮，使用link_towith進行刪除操作可能無法如預期運作。 %>
-        <td>
-          <%= button_to 'Delete', article_path(article), method: :delete, onclick: "return confirm('Are you sure you want to delete this article?')" %>
-        </td>
-      </tr>
+      <div class="row justify-content-center">
+        <div class="col-8 mt-4">
+          <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+            <div class="card-header fst-italic">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><%= link_to article.title, article_path(article), class:"text-success" %></h5>
+              <p class="card-text"><%= truncate(article.description, length:10) %></p>
+              <%= link_to "View", article_path(article), class:"btn btn-outline-success" %>
+              <%= link_to "Edit", edit_article_path(article), class:"btn btn-outline-primary" %>
+              <%= button_to "Delete", article_path(article), class:"btn btn-outline-danger", method: :delete, onclick: "return confirm('Are you sure you want to delete this article?')" %>
+            </div>
+            <div class="card-footer text-body-secondary">
+              <small>created <%= time_ago_in_words(article.created_at) %> ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-</table>
-<p>
-  <%= link_to "Create new article", new_article_path %>
-</p>
+  </div>
+</div>
