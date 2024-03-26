@@ -1,10 +1,8 @@
-
-
-<h1>Showing article details</h1>
-<p>Title: <%= @article.title %></p>
-<p>Description: <%= @article.description %></p>
-
-<%= link_to 'Edit', edit_article_path(@article) %>
-<%= button_to 'Delete', article_path(@article), method: :delete, onclick: "return confirm('Are you sure you want to delete this article?')" %>
-<%= link_to 'Return to articles listing', articles_path %>
-
+<div id="page-content">
+  <h1 class="text-center pt-4">Showing article details</h1>
+  <p>Title: <%= @article.title %></p>
+  <p>Description: <%= @article.description %></p>
+  <%= link_to 'Edit', edit_article_path(@article) %>
+  <%= button_to 'Delete', article_path(@article), method: :delete, onclick: "return confirm('Are you sure you want to delete this article?')" %>
+  <%= link_to 'Return to articles listing', articles_path %>
+</div>

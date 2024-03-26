@@ -17,7 +17,8 @@ class ArticlesController < ApplicationController
   def edit; end
 
   def create
-    # render plain: params[:article]
+    #render plain: params[:article]
+    binding.break
     @article = Article.new(article_params)
     if @article.save
       flash[:notice] = 'Article was created successfully.' # sending success message by flash
