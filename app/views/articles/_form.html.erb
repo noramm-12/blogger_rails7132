@@ -1,20 +1,7 @@
 <div class="container">
-  <% if @article.errors.any? %>
-    <h2>the following errors prevented the article from being saved</h2>
-    <ul>
-      <% @article.errors.full_messages.each do |msg| %>
-        <li><%= msg%></li>
-      <% end %>
-    </ul>
-  <% end %>
-  <% if @article.errors.any? %>
-    <%# Your existing code for displaying errors %>
-  <% else %>
-    <p>No errors found.</p>
-  <% end %>
-  <%# POST article_path(article)=>update %>
   <div class="row justify-content-center ">
     <div class="col-10">
+      <%= render "shared/errors" %>
       <%= form_with(model: @article ,class:"shadow-lg p-3 mb-5 bg-body-tertiary rounded",local:true) do |f| %>
         <div class="row mb-3">
           <%= f.label :title,class:"form-label col-2" %>
