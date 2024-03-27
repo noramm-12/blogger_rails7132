@@ -1,26 +1,25 @@
-<div id="page-content">
-  <h1 class="text-center pt-4"><%= @article.title %></h1>
-  <div class="container .bg-secondary-subtle">
-    <div class="row justify-content-center">
-      <div class="col-8 mt-4">
-        <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
-          <div class="card-header fst-italic">
-            Featured
-          </div>
-          <div class="card-body">
-            <div class="card-text text-start"><%= simple_format(@article.description) %></div>
-            <div id="button-group" class=" justify-content-center d-flex" >
-              <%= link_to "Edit", edit_article_path(@article), class:"btn btn-outline-primary me-2" %>
-              <%= button_to "Delete", article_path(@article), class:"btn btn-outline-danger me-2", method: :delete, onclick: "return confirm('Are you sure you want to delete this article?')" %>
-            </div>
-          </div>
-          <div class="card-footer text-body-secondary">
-            <small>created <%= time_ago_in_words(@article.created_at) %> ago</small>
+<h1 class="text-center pt-4"><%= @article.title %></h1>
+<div class="container .bg-secondary-subtle">
+  <div class="row justify-content-center">
+    <div class="col-8 mt-4">
+      <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+        <div class="card-header fst-italic">
+          Featured
+        </div>
+        <div class="card-body">
+          <div class="card-text text-start"><%= simple_format(@article.description) %></div>
+          <div id="button-group" class=" justify-content-center d-flex" >
+            <%= link_to "Edit", edit_article_path(@article), class:"btn btn-outline-primary me-2" %>
+            <%= button_to "Delete", article_path(@article), class:"btn btn-outline-danger me-2", method: :delete, onclick: "return confirm('Are you sure you want to delete this article?')" %>
           </div>
         </div>
-        <div class="row justify-content-center ">
-          <%= link_to 'Return to articles listing', articles_path, class:"text-center" %>
+        <div class="card-footer text-body-secondary">
+          <small>created <%= time_ago_in_words(@article.created_at) %> ago</small>
         </div>
+      </div>
+      <div class="row justify-content-center ">
+        <%= link_to 'Return to articles listing', articles_path, class:"text-center" %>
       </div>
     </div>
   </div>
+</div>
