@@ -13,7 +13,20 @@ body {
     // background-size: cover;
 }
 
-#page-content{
-    background-color: rgba(151, 135, 135, 0.349);
-    height: 100vh;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex:1;
+}
+
+
+#page-content {
+    flex: 1;
+    background-color: lightgrey;
 }
