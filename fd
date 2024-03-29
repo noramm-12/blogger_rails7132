@@ -1,0 +1,77 @@
+[33mcommit 5b2445f7781e665d5c94181cf0baaff2e99e08f8[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/user[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/feature/user[m[33m, [m[1;32mmain[m[33m)[m
+Author: noramm-12 <a0960186130@gmail.com>
+Date:   Fri Mar 29 18:24:27 2024 +0800
+
+    revert
+
+[33mcommit 56031e197e04acaade05948d502b8a4326f5c0a1[m
+Author: noramm-12 <a0960186130@gmail.com>
+Date:   Fri Mar 29 17:52:50 2024 +0800
+
+    [feat/front]:style show and index for user
+
+[33mcommit 004fa5067b1351b6799926f246895a29150ee809[m
+Author: noramm-12 <a0960186130@gmail.com>
+Date:   Fri Mar 29 14:37:45 2024 +0800
+
+    [fix/backend] add one-to-many association between users and articles
+
+[33mcommit c6a143704153f77162901d645043fbb54356f21b[m
+Author: noramm-12 <a0960186130@gmail.com>
+Date:   Fri Mar 29 00:39:02 2024 +0800
+
+    create usert table and user model
+
+[33mcommit 16adde71afb53c9f0fee484eb8485b1269010a79[m
+Author: noramm-12 <a0960186130@gmail.com>
+Date:   Thu Mar 28 11:36:44 2024 +0800
+
+    add .gitgnore
+
+[33mcommit 2009edd1ce9a1f80e5e6b7b7a80481bfe0c4ca5b[m
+Author: noramm-12 <a0960186130@gmail.com>
+Date:   Wed Mar 27 17:35:46 2024 +0800
+
+    claen up layouts
+
+[33mcommit afd9254e67bd06dff3e0a53f8523a0bfeae7a667[m
+Author: noramm-12 <a0960186130@gmail.com>
+Date:   Wed Mar 27 17:13:50 2024 +0800
+
+    style show page
+
+[33mcommit 83215f42934d302976798326eac9bb59a312ed9e[m
+Author: noramm-12 <a0960186130@gmail.com>
+Date:   Tue Mar 26 22:56:34 2024 +0800
+
+    style form
+
+[33mcommit f39455efbaa61038723945ff67558fdde4a9534b[m
+Author: noramm-12 <a0960186130@gmail.com>
+Date:   Sun Mar 24 22:49:55 2024 +0800
+
+    style article index page
+
+[33mcommit 14d055e10c2442beb0288b99532b8d475dfe0a83[m
+Author: noramm-12 <a0960186130@gmail.com>
+Date:   Wed Mar 20 17:14:33 2024 +0800
+
+    change navbar links
+
+[33mcommit 93b60f35a76ee79c44f263ba07ffb1f85cbbca59[m
+Author: noramm-12 <a0960186130@gmail.com>
+Date:   Wed Mar 20 14:37:33 2024 +0800
+
+    add homepage and navbar
+
+[33mcommit 5b8fe1b020f9bed84d382526041cc5ea6d27ab22[m
+Author: noramm-12 <a0960186130@gmail.com>
+Date:   Wed Mar 20 12:48:42 2024 +0800
+
+    import bootstrap5
+
+[33mcommit 20ec20133e0fdb464c3ca98796ef33154ca7349d[m
+Author: noramm-12 <a0960186130@gmail.com>
+Date:   Fri Mar 15 16:50:01 2024 +0800
+
+    first commit
