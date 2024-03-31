@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="row justify-content-center mt-4 mb-3">
-          <%= f.submit "Sign up", class:"col-5 btn btn-secondary btn-lg" %>
+          <%= f.submit(@user.new_record? ? "Sign up" : "Update account", class: "col-5 btn btn-secondary btn-lg") %>
         </div>
       <% end %>
       <div class="row justify-content-center ">
