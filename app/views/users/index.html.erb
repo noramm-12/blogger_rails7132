@@ -1,4 +1,4 @@
-<h1 class="text-center pt-4">Ruby Blogger</h1>
+<h1 class="text-center pt-4">Blogger List</h1>
 
 <div class="container .bg-secondary-subtle">
   <% @users.each do |user| %>
@@ -10,8 +10,9 @@
         </div>
         <div class="card-body">
           <h5 class="card-title">
-            <%= image_tag gravatar_for(user,size:'100'),alt:user.username,
-            class:"rounded mx-auto d-block" %>
+            <%= link_to(user) do %>
+            <%= image_tag(gravatar_for(user, size: '100'), alt: user.username, class: "rounded mx-auto d-block") %>
+          <% end %>
           </h5>
           <p class="card-text">
             <%= pluralize(user.articles.count,"article") %>
