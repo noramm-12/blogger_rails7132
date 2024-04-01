@@ -29830,3 +29830,2858 @@ Processing by ArticlesController#show as HTML
 Completed 200 OK in 19ms (Views: 15.3ms | ActiveRecord: 1.0ms | Allocations: 10113)
 
 
+Started GET "/users/2/" for 127.0.0.1 at 2024-04-01 17:12:42 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 27.0ms | Allocations: 7692)
+  Rendered users/show.html.erb within layouts/application (Duration: 32.7ms | Allocations: 10056)
+  Rendered layouts/_navigation.html.erb (Duration: 1.3ms | Allocations: 301)
+  Rendered layouts/_messages.html.erb (Duration: 0.6ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 93.7ms | Allocations: 40225)
+Completed 200 OK in 126ms (Views: 97.5ms | ActiveRecord: 5.6ms | Allocations: 50362)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2024-04-01 17:12:53 +0800
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.6ms | Allocations: 210)
+  Rendered articles/_form.html.erb (Duration: 3.3ms | Allocations: 1517)
+  Rendered articles/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2099)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 8590)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 9491)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2024-04-01 17:13:07 +0800
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered articles/_form.html.erb (Duration: 4.5ms | Allocations: 1223)
+  Rendered articles/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1629)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 8513)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 9430)
+
+
+Started GET "/users/" for 127.0.0.1 at 2024-04-01 17:13:12 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 435)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 111)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 7115)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 8093)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-01 17:13:45 +0800
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 550)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 98)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 7005)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 8130)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-01 17:14:40 +0800
+Started GET "/users/2/" for 127.0.0.1 at 2024-04-01 17:14:40 +0800
+Started GET "/articles/" for 127.0.0.1 at 2024-04-01 17:14:40 +0800
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 574)
+  Rendered layouts/_navigation.html.erb (Duration: 1.5ms | Allocations: 347)
+  Rendered layouts/_messages.html.erb (Duration: 0.8ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 124.3ms | Allocations: 30590)
+Completed 200 OK in 128ms (Views: 125.9ms | ActiveRecord: 0.0ms | Allocations: 32165)
+
+
+Processing by UsersController#show as HTML
+Processing by ArticlesController#index as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 13.2ms | Allocations: 7733)
+  Rendered users/show.html.erb within layouts/application (Duration: 23.6ms | Allocations: 9335)
+  [1m[36mArticle Load (78.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/_article.html.erb:3
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  Rendered articles/_article.html.erb (Duration: 149.9ms | Allocations: 36869)
+  Rendered articles/index.html.erb within layouts/application (Duration: 155.6ms | Allocations: 37949)
+  Rendered layouts/_navigation.html.erb (Duration: 3.9ms | Allocations: 745)
+  Rendered layouts/_messages.html.erb (Duration: 1.6ms | Allocations: 415)
+  Rendered layouts/_footer.html.erb (Duration: 1.5ms | Allocations: 301)
+  Rendered layout layouts/application.html.erb (Duration: 361.6ms | Allocations: 71539)
+Completed 200 OK in 427ms (Views: 355.9ms | ActiveRecord: 52.4ms | Allocations: 83562)
+
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 117)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 396.5ms | Allocations: 86390)
+Completed 200 OK in 440ms (Views: 296.9ms | ActiveRecord: 126.2ms | Allocations: 90798)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-01 17:14:46 +0800
+Started GET "/users/2/" for 127.0.0.1 at 2024-04-01 17:14:46 +0800
+Started GET "/articles/" for 127.0.0.1 at 2024-04-01 17:14:46 +0800
+Processing by PagesController#home as HTML
+Processing by ArticlesController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1408)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  [1m[36mArticle Load (7.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/_article.html.erb:3
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:3
+  ↳ app/views/articles/_article.html.erb:8
+  Rendered articles/_article.html.erb (Duration: 17.8ms | Allocations: 11761)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (Duration: 28.2ms | Allocations: 18439)
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  Rendered articles/_article.html.erb (Duration: 101.9ms | Allocations: 39744)
+  Rendered articles/index.html.erb within layouts/application (Duration: 109.0ms | Allocations: 41720)
+  Rendered layouts/_navigation.html.erb (Duration: 4.5ms | Allocations: 1496)
+  Rendered layout layouts/application.html.erb (Duration: 152.2ms | Allocations: 60833)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 22.6ms | Allocations: 77218)
+
+
+  Rendered layouts/_navigation.html.erb (Duration: 29.0ms | Allocations: 3588)
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <%= link_to '痞客幫',root_path,class:"navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to 'About',about_path,class:"nav-link  %>
+          <%= link_to "Bloggers", users_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Articles
+          </a>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'Articles listing', articles_path,class:"dropdown-item" %></li>
+            <li><%= link_to 'Create a new article',new_article_path,class:"dropdown-item" %></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+):
+1:    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+2:      <div class="container-fluid">
+3:        <%= link_to '痞客幫',root_path,class:"navbar-brand" %>
+4:        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+5:          <span class="navbar-toggler-icon"></span>
+6:        </button>
+7:        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+8:          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+9:            <li class="nav-item">
+10:              <%= link_to 'About',about_path,class:"nav-link  %>
+11:              <%= link_to "Bloggers", users_path, class: "nav-link" %>
+12:            </li>
+13:            <li class="nav-item dropdown">
+14:              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+15:                Articles
+16:              </a>
+17:              <ul class="dropdown-menu">
+18:                <li><%= link_to 'Articles listing', articles_path,class:"dropdown-item" %></li>
+19:                <li><%= link_to 'Create a new article',new_article_path,class:"dropdown-item" %></li>
+20:                <li><hr class="dropdown-divider"></li>
+21:                <li><a class="dropdown-item" href="#">Something else here</a></li>
+22:              </ul>
+23:            </li>
+24:            <li class="nav-item">
+25:              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+26:            </li>
+27:          </ul>
+28:          <form class="d-flex" role="search">
+29:            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+30:            <button class="btn btn-outline-success" type="submit">Search</button>
+31:          </form>
+32:        </div>
+33:      </div>
+34:    </nav>
+  
+app/views/layouts/_navigation.html.erb:11: syntax error, unexpected constant, expecting ')'
+app/views/layouts/_navigation.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/_navigation.html.erb:18: unknown regexp option - l
+app/views/layouts/_navigation.html.erb:20: unknown regexp option - l
+app/views/layouts/_navigation.html.erb:21: unknown regexp option - l
+app/views/layouts/_navigation.html.erb:23: unknown regexp option - l
+app/views/layouts/_navigation.html.erb:26: unknown regexp option - l
+app/views/layouts/_navigation.html.erb:30: unknown regexp options - btt
+app/views/layouts/_navigation.html.erb:32: unknown regexp options - dv
+app/views/layouts/_navigation.html.erb:34: unknown regexp options - av
+app/views/layouts/_navigation.html.erb:36: unterminated string meets end of file
+app/views/layouts/application.html.erb:12
+  Rendered layout layouts/application.html.erb (Duration: 189.4ms | Allocations: 76091)
+  Rendered layouts/_navigation.html.erb (Duration: 16.0ms | Allocations: 6670)
+Completed 500 Internal Server Error in 433ms (ActiveRecord: 21.2ms | Allocations: 254184)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 638.4ms | Allocations: 609033)
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <%= link_to '痞客幫',root_path,class:"navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to 'About',about_path,class:"nav-link  %>
+          <%= link_to "Bloggers", users_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Articles
+          </a>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'Articles listing', articles_path,class:"dropdown-item" %></li>
+            <li><%= link_to 'Create a new article',new_article_path,class:"dropdown-item" %></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+):
+1:    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+2:      <div class="container-fluid">
+3:        <%= link_to '痞客幫',root_path,class:"navbar-brand" %>
+4:        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+5:          <span class="navbar-toggler-icon"></span>
+6:        </button>
+7:        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+8:          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+9:            <li class="nav-item">
+10:              <%= link_to 'About',about_path,class:"nav-link  %>
+11:              <%= link_to "Bloggers", users_path, class: "nav-link" %>
+12:            </li>
+13:            <li class="nav-item dropdown">
+14:              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+15:                Articles
+16:              </a>
+17:              <ul class="dropdown-menu">
+18:                <li><%= link_to 'Articles listing', articles_path,class:"dropdown-item" %></li>
+19:                <li><%= link_to 'Create a new article',new_article_path,class:"dropdown-item" %></li>
+20:                <li><hr class="dropdown-divider"></li>
+21:                <li><a class="dropdown-item" href="#">Something else here</a></li>
+22:              </ul>
+23:            </li>
+24:            <li class="nav-item">
+25:              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+26:            </li>
+27:          </ul>
+28:          <form class="d-flex" role="search">
+29:            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+30:            <button class="btn btn-outline-success" type="submit">Search</button>
+31:          </form>
+32:        </div>
+33:      </div>
+34:    </nav>
+  
+app/views/layouts/_navigation.html.erb:11: syntax error, unexpected constant, expecting ')'
+app/views/layouts/_navigation.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/_navigation.html.erb:18: unknown regexp option - l
+app/views/layouts/_navigation.html.erb:20: unknown regexp option - l
+app/views/layouts/_navigation.html.erb:21: unknown regexp option - l
+app/views/layouts/_navigation.html.erb:23: unknown regexp option - l
+app/views/layouts/_navigation.html.erb:26: unknown regexp option - l
+app/views/layouts/_navigation.html.erb:30: unknown regexp options - btt
+app/views/layouts/_navigation.html.erb:32: unknown regexp options - dv
+app/views/layouts/_navigation.html.erb:34: unknown regexp options - av
+app/views/layouts/_navigation.html.erb:36: unterminated string meets end of file
+app/views/layouts/application.html.erb:12
+Completed 500 Internal Server Error in 864ms (ActiveRecord: 0.0ms | Allocations: 931346)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <%= link_to '痞客幫',root_path,class:"navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to 'About',about_path,class:"nav-link  %>
+          <%= link_to "Bloggers", users_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Articles
+          </a>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'Articles listing', articles_path,class:"dropdown-item" %></li>
+            <li><%= link_to 'Create a new article',new_article_path,class:"dropdown-item" %></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+):
+1:    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+2:      <div class="container-fluid">
+3:        <%= link_to '痞客幫',root_path,class:"navbar-brand" %>
+4:        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+5:          <span class="navbar-toggler-icon"></span>
+6:        </button>
+7:        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+8:          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+9:            <li class="nav-item">
+10:              <%= link_to 'About',about_path,class:"nav-link  %>
+11:              <%= link_to "Bloggers", users_path, class: "nav-link" %>
+12:            </li>
+13:            <li class="nav-item dropdown">
+14:              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+15:                Articles
+16:              </a>
+17:              <ul class="dropdown-menu">
+18:                <li><%= link_to 'Articles listing', articles_path,class:"dropdown-item" %></li>
+19:                <li><%= link_to 'Create a new article',new_article_path,class:"dropdown-item" %></li>
+20:                <li><hr class="dropdown-divider"></li>
+21:                <li><a class="dropdown-item" href="#">Something else here</a></li>
+22:              </ul>
+23:            </li>
+24:            <li class="nav-item">
+25:              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+26:            </li>
+27:          </ul>
+28:          <form class="d-flex" role="search">
+29:            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+30:            <button class="btn btn-outline-success" type="submit">Search</button>
+31:          </form>
+32:        </div>
+33:      </div>
+34:    </nav>
+  
+app/views/layouts/_navigation.html.erb:11: syntax error, unexpected constant, expecting ')'
+app/views/layouts/_navigation.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/_navigation.html.erb:18: unknown regexp option - l
+app/views/layouts/_navigation.html.erb:20: unknown regexp option - l
+app/views/layouts/_navigation.html.erb:21: unknown regexp option - l
+app/views/layouts/_navigation.html.erb:23: unknown regexp option - l
+app/views/layouts/_navigation.html.erb:26: unknown regexp option - l
+app/views/layouts/_navigation.html.erb:30: unknown regexp options - btt
+app/views/layouts/_navigation.html.erb:32: unknown regexp options - dv
+app/views/layouts/_navigation.html.erb:34: unknown regexp options - av
+app/views/layouts/_navigation.html.erb:36: unterminated string meets end of file
+app/views/layouts/application.html.erb:12
+Started GET "/" for 127.0.0.1 at 2024-04-01 17:14:55 +0800
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 242)
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 306)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 51.4ms | Allocations: 30429)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms | Allocations: 32000)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 17:14:58 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 435)
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 117)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 7477)
+Completed 200 OK in 18ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 9862)
+
+
+Started GET "/users/2/" for 127.0.0.1 at 2024-04-01 17:15:43 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 14.8ms | Allocations: 7485)
+  Rendered users/show.html.erb within layouts/application (Duration: 42.8ms | Allocations: 23265)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 58.6ms | Allocations: 30733)
+Completed 200 OK in 85ms (Views: 59.8ms | ActiveRecord: 3.5ms | Allocations: 36077)
+
+
+Started GET "/articles/13" for 127.0.0.1 at 2024-04-01 17:15:46 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mArticle Load (3.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:48:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/show.html.erb:7
+  Rendered articles/show.html.erb within layouts/application (Duration: 31.6ms | Allocations: 2828)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 55.6ms | Allocations: 9644)
+Completed 200 OK in 82ms (Views: 53.2ms | ActiveRecord: 7.7ms | Allocations: 12464)
+
+
+Started GET "/articles/" for 127.0.0.1 at 2024-04-01 17:15:52 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/_article.html.erb:3
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  Rendered articles/_article.html.erb (Duration: 46.2ms | Allocations: 12283)
+  Rendered articles/index.html.erb within layouts/application (Duration: 49.1ms | Allocations: 13113)
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 74.3ms | Allocations: 19929)
+Completed 200 OK in 80ms (Views: 76.0ms | ActiveRecord: 1.5ms | Allocations: 20913)
+
+
+Started GET "/users/3/edit" for 127.0.0.1 at 2024-04-01 17:16:02 +0800
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 6.1ms | Allocations: 214)
+  Rendered users/_form.html.erb (Duration: 20.2ms | Allocations: 2244)
+  Rendered users/edit.html.erb within layouts/application (Duration: 24.4ms | Allocations: 2823)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 9962)
+Completed 200 OK in 42ms (Views: 38.6ms | ActiveRecord: 0.3ms | Allocations: 12001)
+
+
+Started GET "/articles" for 127.0.0.1 at 2024-04-01 17:16:16 +0800
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/_article.html.erb:3
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:8
+  Rendered articles/_article.html.erb (Duration: 53.5ms | Allocations: 10952)
+  Rendered articles/index.html.erb within layouts/application (Duration: 54.1ms | Allocations: 11025)
+  Rendered layouts/_navigation.html.erb (Duration: 6.1ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 72.7ms | Allocations: 17512)
+Completed 200 OK in 74ms (Views: 69.0ms | ActiveRecord: 4.2ms | Allocations: 18097)
+
+
+Started GET "/articles/7" for 127.0.0.1 at 2024-04-01 17:16:18 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:48:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/show.html.erb:7
+  Rendered articles/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1394)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 98)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 7879)
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 0.8ms | Allocations: 9527)
+
+
+Started GET "/articles/7" for 127.0.0.1 at 2024-04-01 17:16:19 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:48:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/show.html.erb:7
+  Rendered articles/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1737)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 98)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 8882)
+Completed 200 OK in 16ms (Views: 11.9ms | ActiveRecord: 1.1ms | Allocations: 10530)
+
+
+Started GET "/articles/7/edit" for 127.0.0.1 at 2024-04-01 17:18:20 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:48:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered articles/_form.html.erb (Duration: 10.6ms | Allocations: 1555)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 26.5ms | Allocations: 2458)
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 9269)
+Completed 200 OK in 45ms (Views: 40.9ms | ActiveRecord: 0.2ms | Allocations: 11312)
+
+
+Started GET "/users/3/" for 127.0.0.1 at 2024-04-01 17:19:53 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 5.9ms | Allocations: 1189)
+  Rendered users/show.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1660)
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 110)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 8988)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.7ms | Allocations: 10636)
+
+
+Started GET "/users/2/" for 127.0.0.1 at 2024-04-01 17:19:58 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 5.1ms | Allocations: 3799)
+  Rendered users/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3943)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 11415)
+Completed 200 OK in 29ms (Views: 25.7ms | ActiveRecord: 0.9ms | Allocations: 12730)
+
+
+Started GET "/users/2/" for 127.0.0.1 at 2024-04-01 17:20:31 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 10.3ms | Allocations: 7486)
+  Rendered users/show.html.erb within layouts/application (Duration: 15.9ms | Allocations: 9881)
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 301)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 44.0ms | Allocations: 39436)
+Completed 200 OK in 59ms (Views: 44.5ms | ActiveRecord: 6.5ms | Allocations: 46590)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-01 17:21:15 +0800
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 15.1ms | Allocations: 548)
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 98)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 38.3ms | Allocations: 7221)
+Completed 200 OK in 49ms (Views: 42.6ms | ActiveRecord: 0.0ms | Allocations: 8348)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 17:22:10 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1255)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 2334)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms | Allocations: 5137)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `obj' for an instance of #<Class:0x00007663b4e544d8>):
+    1: <h1 class="text-center pt-4">Ruby Blogger</h1>
+    2: 
+    3: <div class="container .bg-secondary-subtle">
+    4:     <% obj.each do |article| %>
+    5:       <div class="row justify-content-center">
+    6:         <div class="col-8 mt-4">
+    7:           <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+  
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 17:22:16 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 1035)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1457)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2349)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `obj' for an instance of #<Class:0x00007663b4e544d8>):
+    1: <h1 class="text-center pt-4">Ruby Blogger</h1>
+    2: 
+    3: <div class="container .bg-secondary-subtle">
+    4:     <% obj.each do |article| %>
+    5:       <div class="row justify-content-center">
+    6:         <div class="col-8 mt-4">
+    7:           <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+  
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 17:23:10 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 14.5ms | Allocations: 5523)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 6274)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 5.6ms | Allocations: 9421)
+
+
+  
+ActionView::Template::Error (undefined method `user' for an instance of User):
+     6:         <div class="col-8 mt-4">
+     7:           <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+     8:             <div class="card-header fst-italic">
+     9:               by <%= user.user.username if user.user %>
+    10:             </div>
+    11:             <div class="card-body">
+    12:               <h5 class="card-title"><%= link_to user.title, user_path(user), class:"text-success" %></h5>
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 17:23:24 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 5516)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 6267)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 4.0ms | Allocations: 9414)
+
+
+  
+ActionView::Template::Error (undefined method `user' for an instance of User):
+     6:         <div class="col-8 mt-4">
+     7:           <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+     8:             <div class="card-header fst-italic">
+     9:               <!-- by <%= user.user.username if user.user %> -->
+    10:             </div>
+    11:             <div class="card-body">
+    12:               <h5 class="card-title"><%= link_to user.title, user_path(user), class:"text-success" %></h5>
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 17:23:40 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (12.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 27.3ms | Allocations: 5490)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 5585)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 16.2ms | Allocations: 17383)
+
+
+  
+ActionView::Template::Error (undefined method `user' for an instance of User):
+     6:         <div class="col-8 mt-4">
+     7:           <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+     8:             <div class="card-header fst-italic">
+     9:               <!-- by <%= user.user.username if user.user %> -->
+    10:             </div>
+    11:             <div class="card-body">
+    12:               <!-- <h5 class="card-title"><%= link_to user.title, user_path(user), class:"text-success" %></h5> -->
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 17:23:51 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 5509)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 5932)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 3.0ms | Allocations: 8751)
+
+
+  
+ActionView::Template::Error (undefined method `user' for an instance of User):
+     6:         <div class="col-8 mt-4">
+     7:           <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+     8:             <div class="card-header fst-italic">
+     9:               <!-- by <%= user.user.username if user.user %> -->
+    10:             </div>
+    11:             <div class="card-body">
+    12:               <!-- <h5 class="card-title"><%= link_to user.title, user_path(user), class:"text-success" %></h5> -->
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 17:24:09 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 5516)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 5611)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 5.3ms | Allocations: 8758)
+
+
+  
+ActionView::Template::Error (undefined method `user' for an instance of User):
+     6:         <div class="col-8 mt-4">
+     7:           <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+     8:             <div class="card-header fst-italic">
+     9:               <!-- by <%= user.user.username if user.user %> -->
+    10:             </div>
+    11:             <!-- <div class="card-body">
+    12:               <h5 class="card-title"><%= link_to user.title, user_path(user), class:"text-success" %></h5>
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 17:24:49 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1868)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2295)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.7ms | Allocations: 3187)
+
+
+  
+ActionView::Template::Error (undefined method `user' for an instance of User):
+     6:         <div class="col-8 mt-4">
+     7:           <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+     8:             <div class="card-header fst-italic">
+     9:               <!-- by <%= user.user.username if user.user %> -->
+    10:             </div>
+    11:             <!-- <div class="card-body">
+    12:               <h5 class="card-title"><%= link_to user.title, user_path(user), class:"text-success" %></h5>
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:34:21 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (8.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 7820)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 8571)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 12.6ms | Allocations: 12050)
+
+
+  
+ActionView::Template::Error (undefined method `user' for an instance of User):
+     6:         <div class="col-8 mt-4">
+     7:           <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+     8:             <div class="card-header fst-italic">
+     9:               <!-- by <%= user.user.username if user.user %> -->
+    10:             </div>
+    11:             <!-- <div class="card-body">
+    12:               <h5 class="card-title"><%= link_to user.title, user_path(user), class:"text-success" %></h5>
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:34:39 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 5209)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 5632)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 3.7ms | Allocations: 8779)
+
+
+  
+ActionView::Template::Error (undefined method `user' for an instance of User):
+     6:         <div class="col-8 mt-4">
+     7:           <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+     8:             <div class="card-header fst-italic">
+     9:               <!-- by <%= user.user.username if user.user %> -->
+    10:             </div>
+    11:             <!-- <div class="card-body">
+    12:               <h5 class="card-title"><%= link_to user.title, user_path(user), class:"text-success" %></h5>
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:34:56 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 4035)
+  Rendered layouts/_navigation.html.erb (Duration: 1.0ms | Allocations: 337)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 48.9ms | Allocations: 34153)
+Completed 200 OK in 54ms (Views: 48.4ms | ActiveRecord: 3.0ms | Allocations: 37317)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:35:02 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 5500)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 6256)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 6.0ms | Allocations: 9402)
+
+
+  
+ActionView::Template::Error (undefined method `user' for an instance of User):
+     6:         <div class="col-8 mt-4">
+     7:           <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+     8:             <div class="card-header fst-italic">
+     9:                 <!-- by <%= user.user.username if user.user %> -->
+    10:               </div>
+    11:               <!-- <div class="card-body">
+    12:                 <h5 class="card-title"><%= link_to user.title, user_path(user), class:"text-success" %></h5>
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:36:34 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 4278)
+  Rendered layouts/_navigation.html.erb (Duration: 13.5ms | Allocations: 305)
+  Rendered layouts/_messages.html.erb (Duration: 0.8ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 103.7ms | Allocations: 34056)
+Completed 200 OK in 108ms (Views: 102.8ms | ActiveRecord: 3.0ms | Allocations: 37227)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-04-01 18:36:36 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 8.1ms | Allocations: 5689)
+  Rendered users/show.html.erb within layouts/application (Duration: 13.9ms | Allocations: 7743)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 13904)
+Completed 200 OK in 26ms (Views: 18.5ms | ActiveRecord: 3.0ms | Allocations: 15920)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:36:52 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 4994)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 5089)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 2.9ms | Allocations: 7906)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `path' for an instance of #<Class:0x00007663571eecf0>):
+     6:         <div class="col-8 mt-4">
+     7:           <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+     8:             <div class="card-header fst-italic">
+     9:                 by <%=link_to user.username, user+path%>
+    10:               </div>
+    11:               
+    12:           </div>
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:37:12 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 4843)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 5594)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 8.3ms | Allocations: 8743)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+     6:         <div class="col-8 mt-4">
+     7:           <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+     8:             <div class="card-header fst-italic">
+     9:                 by <%=link_to user.username, user_path %>
+    10:               </div>
+    11:               
+    12:           </div>
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:37:18 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3937)
+  Rendered layouts/_navigation.html.erb (Duration: 5.4ms | Allocations: 304)
+  Rendered layouts/_messages.html.erb (Duration: 1.3ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 81.1ms | Allocations: 33682)
+Completed 200 OK in 92ms (Views: 79.6ms | ActiveRecord: 3.5ms | Allocations: 36518)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:38:16 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 5016)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 5767)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 2.5ms | Allocations: 9242)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_' for an instance of #<Class:0x00007663570f3fd0>):
+     6:         <div class="col-8 mt-4">
+     7:           <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+     8:             <div class="card-header fst-italic">
+     9:                 by <%=link_to user.username, user_%>
+    10:               </div>
+    11:               
+    12:           </div>
+  
+app/views/users/index.html.erb:9
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:38:35 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (16.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 27.1ms | Allocations: 4235)
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 303)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 79.7ms | Allocations: 33973)
+Completed 200 OK in 101ms (Views: 62.9ms | ActiveRecord: 19.3ms | Allocations: 37137)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-04-01 18:39:03 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 14.3ms | Allocations: 5305)
+  Rendered users/show.html.erb within layouts/application (Duration: 56.4ms | Allocations: 21096)
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 96.9ms | Allocations: 28245)
+Completed 200 OK in 126ms (Views: 115.4ms | ActiveRecord: 3.5ms | Allocations: 30564)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-01 18:39:04 +0800
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 547)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 98)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 6891)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 8014)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2024-04-01 18:39:07 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 5.3ms | Allocations: 3462)
+  Rendered users/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3606)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 10422)
+Completed 200 OK in 18ms (Views: 13.9ms | ActiveRecord: 0.9ms | Allocations: 12069)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-01 18:39:08 +0800
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 53)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 6729)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 7960)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2024-04-01 18:39:42 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 5.0ms | Allocations: 3467)
+  Rendered users/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3611)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 10423)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 1.0ms | Allocations: 12068)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2024-04-01 18:40:02 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 7.7ms | Allocations: 3479)
+  Rendered users/show.html.erb within layouts/application (Duration: 22.6ms | Allocations: 3946)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 11085)
+Completed 200 OK in 43ms (Views: 37.8ms | ActiveRecord: 1.8ms | Allocations: 13061)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:40:46 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (10.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 26.2ms | Allocations: 5267)
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 6018)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 14.4ms | Allocations: 9168)
+
+
+  
+ActionView::Template::Error (undefined method `title' for an instance of User):
+     9:                 by <%=link_to user.username, user_path(user) %>
+    10:               </div>
+    11:               <div class="card-body">
+    12:                 <h5 class="card-title"><%= link_to user.title, user_path(user), class:"text-success" %></h5>
+    13:                 <p class="card-text"><%= truncate(user.description, length:10) %></p>
+    14:                 <div id="button-group" class=" justify-content-center d-flex" >
+    15:                   <%= link_to "View", user_path(user), class:"btn btn-outline-success me-2" %>
+  
+app/views/users/index.html.erb:12
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:46:08 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (9.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 16.1ms | Allocations: 7775)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 8526)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 14.0ms | Allocations: 11681)
+
+
+  
+ActionView::Template::Error (undefined method `link_tag' for an instance of #<Class:0x0000766356c34b20>):
+    11:               <div class="card-body">
+    12:     
+    13:                 <h5 class="card-title">
+    14:                     <%= link_tag gravatar_for(user,size:'150'),alt:user.username, class:"rounded mx-auto d-block" %>
+    15:                 </h5>
+    16: 
+    17:           </div>
+  
+app/views/users/index.html.erb:14
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:46:13 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 48.4ms | Allocations: 5157)
+  Rendered layout layouts/application.html.erb (Duration: 50.4ms | Allocations: 5908)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 5.6ms | Allocations: 8732)
+
+
+  
+ActionView::Template::Error (undefined method `link_tag' for an instance of #<Class:0x00007663b470cef0>):
+    11:               <div class="card-body">
+    12:     
+    13:                 <h5 class="card-title">
+    14:                     <%= link_tag gravatar_for(user,size:'150'),alt:user.username, class:"rounded mx-auto d-block" %>
+    15:                 </h5>
+    16: 
+    17:           </div>
+  
+app/views/users/index.html.erb:14
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:46:24 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1560)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1990)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 5159)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="text-center pt-4">Ruby Blogger</h1>
+
+<div class="container .bg-secondary-subtle">
+    <% @users.each do |user| %>
+      <div class="row justify-content-center">
+        <div class="col-8 mt-4">
+          <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+            <div class="card-header fst-italic">
+                by <%=link_to user.username, user_path(user) %>
+              </div>
+              <div class="card-body">
+    
+                <h5 class="card-title">
+                    <%= link_tag image_tag (user,size:'150'),alt:user.username, class:"rounded mx-auto d-block" %>
+                </h5>
+
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+):
+1:    <h1 class="text-center pt-4">Ruby Blogger</h1>
+2:    
+3:    <div class="container .bg-secondary-subtle">
+4:        <% @users.each do |user| %>
+5:          <div class="row justify-content-center">
+6:            <div class="col-8 mt-4">
+7:              <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+8:                <div class="card-header fst-italic">
+9:                    by <%=link_to user.username, user_path(user) %>
+10:                  </div>
+11:                  <div class="card-body">
+12:        
+13:                    <h5 class="card-title">
+14:                        <%= link_tag image_tag (user,size:'150'),alt:user.username, class:"rounded mx-auto d-block" %>
+15:                    </h5>
+16:    
+17:              </div>
+18:            </div>
+19:          </div>
+20:        <% end %>
+21:      </div>
+  
+app/views/users/index.html.erb:14: syntax error, unexpected label, expecting '='
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:46:26 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1607)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 2036)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 2945)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="text-center pt-4">Ruby Blogger</h1>
+
+<div class="container .bg-secondary-subtle">
+    <% @users.each do |user| %>
+      <div class="row justify-content-center">
+        <div class="col-8 mt-4">
+          <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+            <div class="card-header fst-italic">
+                by <%=link_to user.username, user_path(user) %>
+              </div>
+              <div class="card-body">
+    
+                <h5 class="card-title">
+                    <%= link_tag image_tag (user,size:'150'),alt:user.username, class:"rounded mx-auto d-block" %>
+                </h5>
+
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+):
+1:    <h1 class="text-center pt-4">Ruby Blogger</h1>
+2:    
+3:    <div class="container .bg-secondary-subtle">
+4:        <% @users.each do |user| %>
+5:          <div class="row justify-content-center">
+6:            <div class="col-8 mt-4">
+7:              <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+8:                <div class="card-header fst-italic">
+9:                    by <%=link_to user.username, user_path(user) %>
+10:                  </div>
+11:                  <div class="card-body">
+12:        
+13:                    <h5 class="card-title">
+14:                        <%= link_tag image_tag (user,size:'150'),alt:user.username, class:"rounded mx-auto d-block" %>
+15:                    </h5>
+16:    
+17:              </div>
+18:            </div>
+19:          </div>
+20:        <% end %>
+21:      </div>
+  
+app/views/users/index.html.erb:14: syntax error, unexpected label, expecting '='
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:46:46 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (11.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 23.5ms | Allocations: 5158)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 5581)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 15.9ms | Allocations: 9384)
+
+
+  
+ActionView::Template::Error (undefined method `link_tag' for an instance of #<Class:0x000076635750e6b0>):
+    11:               <div class="card-body">
+    12:     
+    13:                 <h5 class="card-title">
+    14:                     <%= link_tag image_tag gravatar_for(user,size:'150'),alt:user.username, class:"rounded mx-auto d-block" %>
+    15:                 </h5>
+    16: 
+    17:           </div>
+  
+app/views/users/index.html.erb:14
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:46:51 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 44.2ms | Allocations: 9022)
+  Rendered layout layouts/application.html.erb (Duration: 46.0ms | Allocations: 9773)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 8.8ms | Allocations: 12922)
+
+
+  
+ActionView::Template::Error (The asset "<img alt=\"test\" class=\"rounded mx-auto d-block\" src=\"https://www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0" is not present in the asset pipeline.
+):
+    11:               <div class="card-body">
+    12:     
+    13:                 <h5 class="card-title">
+    14:                     <%= link_tag image_tag gravatar1_for(user,size:'150'),alt:user.username, class:"rounded mx-auto d-block" %>
+    15:                 </h5>
+    16: 
+    17:           </div>
+  
+app/views/users/index.html.erb:14
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:47:04 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 38.1ms | Allocations: 9304)
+  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 9727)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 18.3ms | Allocations: 12882)
+
+
+  
+ActionView::Template::Error (The asset "<img alt=\"test\" class=\"rounded mx-auto d-block\" src=\"https://www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0" is not present in the asset pipeline.
+):
+    11:               <div class="card-body">
+    12:     
+    13:                 <h5 class="card-title">
+    14:                     <%= link_to image_tag gravatar1_for(user,size:'150'),alt:user.username, class:"rounded mx-auto d-block" %>
+    15:                 </h5>
+    16: 
+    17:           </div>
+  
+app/views/users/index.html.erb:14
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:47:06 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 6041)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 6473)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.6ms | Allocations: 7365)
+
+
+  
+ActionView::Template::Error (The asset "<img alt=\"test\" class=\"rounded mx-auto d-block\" src=\"https://www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0" is not present in the asset pipeline.
+):
+    11:               <div class="card-body">
+    12:     
+    13:                 <h5 class="card-title">
+    14:                     <%= link_to image_tag gravatar1_for(user,size:'150'),alt:user.username, class:"rounded mx-auto d-block" %>
+    15:                 </h5>
+    16: 
+    17:           </div>
+  
+app/views/users/index.html.erb:14
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:47:28 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 8648)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 9076)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 3.5ms | Allocations: 12554)
+
+
+  
+ActionView::Template::Error (The asset "<img alt=\"test\" class=\"rounded mx-auto d-block\" src=\"https://www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0" is not present in the asset pipeline.
+):
+    11:               <div class="card-body">
+    12:     
+    13:                 <h5 class="card-title">
+    14:                     <%= image_tag gravatar1_for(user,size:'150'),alt:user.username, class:"rounded mx-auto d-block" %>
+    15:                 </h5>
+    16: 
+    17:           </div>
+  
+app/views/users/index.html.erb:14
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:48:06 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 29.3ms | Allocations: 4736)
+  Rendered layouts/_navigation.html.erb (Duration: 1.5ms | Allocations: 304)
+  Rendered layouts/_messages.html.erb (Duration: 0.9ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 108.7ms | Allocations: 34814)
+Completed 200 OK in 123ms (Views: 95.0ms | ActiveRecord: 15.5ms | Allocations: 37988)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:48:12 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 4065)
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 304)
+  Rendered layouts/_messages.html.erb (Duration: 0.6ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 33816)
+Completed 200 OK in 40ms (Views: 33.8ms | ActiveRecord: 1.9ms | Allocations: 36981)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:48:26 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (11.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 32.4ms | Allocations: 4395)
+  Rendered layouts/_navigation.html.erb (Duration: 2.5ms | Allocations: 303)
+  Rendered layouts/_messages.html.erb (Duration: 0.7ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 79.6ms | Allocations: 34475)
+Completed 200 OK in 97ms (Views: 73.0ms | ActiveRecord: 14.6ms | Allocations: 37640)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:48:30 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1123)
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 98)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 8444)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.7ms | Allocations: 9676)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:48:36 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 4724)
+  Rendered layouts/_navigation.html.erb (Duration: 3.2ms | Allocations: 303)
+  Rendered layouts/_messages.html.erb (Duration: 0.9ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 53.4ms | Allocations: 34131)
+Completed 200 OK in 74ms (Views: 56.0ms | ActiveRecord: 4.3ms | Allocations: 36967)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:48:37 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 5179)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 5930)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 2.0ms | Allocations: 9076)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil):
+    13:             <%= image_tag gravatar_for(user,size:'100'),alt:user.username,
+    14:             class:"rounded mx-auto d-block" %>
+    15:           </h5>
+    16: <%= image_tag gravatar_for(@user,size:'200'),alt:@user.username, class:"rounded mx-auto d-block" %>
+    17: 
+    18:         </div>
+    19:       </div>
+  
+app/helpers/application_helper.rb:16:in `gravatar_for'
+app/views/users/index.html.erb:16
+app/views/users/index.html.erb:4
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:48:52 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 41.4ms | Allocations: 4738)
+  Rendered layouts/_navigation.html.erb (Duration: 1.5ms | Allocations: 303)
+  Rendered layouts/_messages.html.erb (Duration: 0.5ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 71.9ms | Allocations: 34500)
+Completed 200 OK in 88ms (Views: 69.1ms | ActiveRecord: 13.7ms | Allocations: 37669)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-04-01 18:48:53 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 7.3ms | Allocations: 5685)
+  Rendered users/show.html.erb within layouts/application (Duration: 11.2ms | Allocations: 7730)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 1.3ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 14541)
+Completed 200 OK in 27ms (Views: 20.0ms | ActiveRecord: 2.9ms | Allocations: 16886)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2024-04-01 18:48:59 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 4.4ms | Allocations: 3154)
+  Rendered users/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3298)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 10109)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.3ms | Allocations: 11756)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:49:09 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 5688)
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 303)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 42.8ms | Allocations: 35442)
+Completed 200 OK in 52ms (Views: 41.0ms | ActiveRecord: 4.3ms | Allocations: 38611)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:49:10 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1565)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1667)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 4506)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="text-center pt-4">Ruby Blogger</h1>
+
+<div class="container .bg-secondary-subtle">
+  <% @users.each do |user| %>
+  <div class="row justify-content-center">
+    <div class="col-8 mt-4">
+      <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+        <div class="card-header fst-italic">
+          by <%=link_to user.username, user_path(user) %>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= link_to image_tag
+            gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+            mx-auto d-block" %>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <h1 class="text-center pt-4">Ruby Blogger</h1>
+2:    
+3:    <div class="container .bg-secondary-subtle">
+4:      <% @users.each do |user| %>
+5:      <div class="row justify-content-center">
+6:        <div class="col-8 mt-4">
+7:          <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+8:            <div class="card-header fst-italic">
+9:              by <%=link_to user.username, user_path(user) %>
+10:            </div>
+11:            <div class="card-body">
+12:              <h5 class="card-title">
+13:                <%= link_to image_tag
+14:                gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+15:                mx-auto d-block" %>
+16:              </h5>
+17:            </div>
+18:          </div>
+19:        </div>
+20:        <% end %>
+21:      </div>
+22:    </div>
+  
+app/views/users/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:49:12 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 1306)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 2434)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms | Allocations: 3518)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="text-center pt-4">Ruby Blogger</h1>
+
+<div class="container .bg-secondary-subtle">
+  <% @users.each do |user| %>
+  <div class="row justify-content-center">
+    <div class="col-8 mt-4">
+      <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+        <div class="card-header fst-italic">
+          by <%=link_to user.username, user_path(user) %>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= link_to image_tag
+            gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+            mx-auto d-block" %>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <h1 class="text-center pt-4">Ruby Blogger</h1>
+2:    
+3:    <div class="container .bg-secondary-subtle">
+4:      <% @users.each do |user| %>
+5:      <div class="row justify-content-center">
+6:        <div class="col-8 mt-4">
+7:          <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+8:            <div class="card-header fst-italic">
+9:              by <%=link_to user.username, user_path(user) %>
+10:            </div>
+11:            <div class="card-body">
+12:              <h5 class="card-title">
+13:                <%= link_to image_tag
+14:                gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+15:                mx-auto d-block" %>
+16:              </h5>
+17:            </div>
+18:          </div>
+19:        </div>
+20:        <% end %>
+21:      </div>
+22:    </div>
+  
+app/views/users/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:49:12 +0800
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:49:12 +0800
+Processing by UsersController#index as HTML
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2579)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4485)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms | Allocations: 9389)
+
+
+  Rendered users/index.html.erb within layouts/application (Duration: 31.2ms | Allocations: 6821)
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="text-center pt-4">Ruby Blogger</h1>
+
+<div class="container .bg-secondary-subtle">
+  <% @users.each do |user| %>
+  <div class="row justify-content-center">
+    <div class="col-8 mt-4">
+      <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+        <div class="card-header fst-italic">
+          by <%=link_to user.username, user_path(user) %>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= link_to image_tag
+            gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+            mx-auto d-block" %>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <h1 class="text-center pt-4">Ruby Blogger</h1>
+2:    
+3:    <div class="container .bg-secondary-subtle">
+4:      <% @users.each do |user| %>
+5:      <div class="row justify-content-center">
+6:        <div class="col-8 mt-4">
+7:          <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+8:            <div class="card-header fst-italic">
+9:              by <%=link_to user.username, user_path(user) %>
+10:            </div>
+11:            <div class="card-body">
+12:              <h5 class="card-title">
+13:                <%= link_to image_tag
+14:                gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+15:                mx-auto d-block" %>
+16:              </h5>
+17:            </div>
+18:          </div>
+19:        </div>
+20:        <% end %>
+21:      </div>
+22:    </div>
+  
+app/views/users/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 10064)
+Completed 500 Internal Server Error in 498ms (ActiveRecord: 0.0ms | Allocations: 556717)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="text-center pt-4">Ruby Blogger</h1>
+
+<div class="container .bg-secondary-subtle">
+  <% @users.each do |user| %>
+  <div class="row justify-content-center">
+    <div class="col-8 mt-4">
+      <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+        <div class="card-header fst-italic">
+          by <%=link_to user.username, user_path(user) %>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= link_to image_tag
+            gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+            mx-auto d-block" %>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <h1 class="text-center pt-4">Ruby Blogger</h1>
+2:    
+3:    <div class="container .bg-secondary-subtle">
+4:      <% @users.each do |user| %>
+5:      <div class="row justify-content-center">
+6:        <div class="col-8 mt-4">
+7:          <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+8:            <div class="card-header fst-italic">
+9:              by <%=link_to user.username, user_path(user) %>
+10:            </div>
+11:            <div class="card-body">
+12:              <h5 class="card-title">
+13:                <%= link_to image_tag
+14:                gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+15:                mx-auto d-block" %>
+16:              </h5>
+17:            </div>
+18:          </div>
+19:        </div>
+20:        <% end %>
+21:      </div>
+22:    </div>
+  
+app/views/users/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:49:13 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 6290)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 9337)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.0ms | Allocations: 18638)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="text-center pt-4">Ruby Blogger</h1>
+
+<div class="container .bg-secondary-subtle">
+  <% @users.each do |user| %>
+  <div class="row justify-content-center">
+    <div class="col-8 mt-4">
+      <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+        <div class="card-header fst-italic">
+          by <%=link_to user.username, user_path(user) %>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= link_to image_tag
+            gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+            mx-auto d-block" %>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <h1 class="text-center pt-4">Ruby Blogger</h1>
+2:    
+3:    <div class="container .bg-secondary-subtle">
+4:      <% @users.each do |user| %>
+5:      <div class="row justify-content-center">
+6:        <div class="col-8 mt-4">
+7:          <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+8:            <div class="card-header fst-italic">
+9:              by <%=link_to user.username, user_path(user) %>
+10:            </div>
+11:            <div class="card-body">
+12:              <h5 class="card-title">
+13:                <%= link_to image_tag
+14:                gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+15:                mx-auto d-block" %>
+16:              </h5>
+17:            </div>
+18:          </div>
+19:        </div>
+20:        <% end %>
+21:      </div>
+22:    </div>
+  
+app/views/users/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:49:18 +0800
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:49:19 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 36.8ms | Allocations: 3797)
+  Rendered layout layouts/application.html.erb (Duration: 48.8ms | Allocations: 5378)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.0ms | Allocations: 10602)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="text-center pt-4">Ruby Blogger</h1>
+
+<div class="container .bg-secondary-subtle">
+  <% @users.each do |user| %>
+  <div class="row justify-content-center">
+    <div class="col-8 mt-4">
+      <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+        <div class="card-header fst-italic">
+          by <%=link_to user.username, user_path(user) %>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= link_to image_tag
+            gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+            mx-auto d-block" %>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <h1 class="text-center pt-4">Ruby Blogger</h1>
+2:    
+3:    <div class="container .bg-secondary-subtle">
+4:      <% @users.each do |user| %>
+5:      <div class="row justify-content-center">
+6:        <div class="col-8 mt-4">
+7:          <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+8:            <div class="card-header fst-italic">
+9:              by <%=link_to user.username, user_path(user) %>
+10:            </div>
+11:            <div class="card-body">
+12:              <h5 class="card-title">
+13:                <%= link_to image_tag
+14:                gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+15:                mx-auto d-block" %>
+16:              </h5>
+17:            </div>
+18:          </div>
+19:        </div>
+20:        <% end %>
+21:      </div>
+22:    </div>
+  
+app/views/users/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:49:20 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 20.7ms | Allocations: 3648)
+  Rendered layout layouts/application.html.erb (Duration: 39.9ms | Allocations: 5221)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms | Allocations: 8718)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="text-center pt-4">Ruby Blogger</h1>
+
+<div class="container .bg-secondary-subtle">
+  <% @users.each do |user| %>
+  <div class="row justify-content-center">
+    <div class="col-8 mt-4">
+      <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+        <div class="card-header fst-italic">
+          by <%=link_to user.username, user_path(user) %>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= link_to image_tag
+            gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+            mx-auto d-block" %>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <h1 class="text-center pt-4">Ruby Blogger</h1>
+2:    
+3:    <div class="container .bg-secondary-subtle">
+4:      <% @users.each do |user| %>
+5:      <div class="row justify-content-center">
+6:        <div class="col-8 mt-4">
+7:          <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+8:            <div class="card-header fst-italic">
+9:              by <%=link_to user.username, user_path(user) %>
+10:            </div>
+11:            <div class="card-body">
+12:              <h5 class="card-title">
+13:                <%= link_to image_tag
+14:                gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+15:                mx-auto d-block" %>
+16:              </h5>
+17:            </div>
+18:          </div>
+19:        </div>
+20:        <% end %>
+21:      </div>
+22:    </div>
+  
+app/views/users/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 32.1ms | Allocations: 3494)
+  Rendered layout layouts/application.html.erb (Duration: 58.3ms | Allocations: 6081)
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 0.0ms | Allocations: 10516)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="text-center pt-4">Ruby Blogger</h1>
+
+<div class="container .bg-secondary-subtle">
+  <% @users.each do |user| %>
+  <div class="row justify-content-center">
+    <div class="col-8 mt-4">
+      <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+        <div class="card-header fst-italic">
+          by <%=link_to user.username, user_path(user) %>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= link_to image_tag
+            gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+            mx-auto d-block" %>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <h1 class="text-center pt-4">Ruby Blogger</h1>
+2:    
+3:    <div class="container .bg-secondary-subtle">
+4:      <% @users.each do |user| %>
+5:      <div class="row justify-content-center">
+6:        <div class="col-8 mt-4">
+7:          <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+8:            <div class="card-header fst-italic">
+9:              by <%=link_to user.username, user_path(user) %>
+10:            </div>
+11:            <div class="card-body">
+12:              <h5 class="card-title">
+13:                <%= link_to image_tag
+14:                gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+15:                mx-auto d-block" %>
+16:              </h5>
+17:            </div>
+18:          </div>
+19:        </div>
+20:        <% end %>
+21:      </div>
+22:    </div>
+  
+app/views/users/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:49:29 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1282)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2039)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3281)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="text-center pt-4">Ruby Blogger</h1>
+
+<div class="container .bg-secondary-subtle">
+  <% @users.each do |user| %>
+  <div class="row justify-content-center">
+    <div class="col-8 mt-4">
+      <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+        <div class="card-header fst-italic">
+          by <%=link_to user.username, user_path(user) %>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= link_to image_tag
+            gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+            mx-auto d-block" %>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <h1 class="text-center pt-4">Ruby Blogger</h1>
+2:    
+3:    <div class="container .bg-secondary-subtle">
+4:      <% @users.each do |user| %>
+5:      <div class="row justify-content-center">
+6:        <div class="col-8 mt-4">
+7:          <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+8:            <div class="card-header fst-italic">
+9:              by <%=link_to user.username, user_path(user) %>
+10:            </div>
+11:            <div class="card-body">
+12:              <h5 class="card-title">
+13:                <%= link_to image_tag
+14:                gravatar_for(user,size:'100'),alt:user.username, class:"rounded
+15:                mx-auto d-block" %>
+16:              </h5>
+17:            </div>
+18:          </div>
+19:        </div>
+20:        <% end %>
+21:      </div>
+22:    </div>
+  
+app/views/users/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:49:46 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 25.4ms | Allocations: 6137)
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 304)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 51.7ms | Allocations: 35558)
+Completed 200 OK in 79ms (Views: 47.5ms | ActiveRecord: 11.6ms | Allocations: 39055)
+
+
+Started GET "/users?alt=test&class=rounded+mx-auto+d-block" for 127.0.0.1 at 2024-04-01 18:49:48 +0800
+Processing by UsersController#index as HTML
+  Parameters: {"alt"=>"test", "class"=>"rounded mx-auto d-block"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1944)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 8930)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 1.0ms | Allocations: 9516)
+
+
+Started GET "/users?alt=test&class=rounded+mx-auto+d-block" for 127.0.0.1 at 2024-04-01 18:49:48 +0800
+Processing by UsersController#index as HTML
+  Parameters: {"alt"=>"test", "class"=>"rounded mx-auto d-block"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1620)
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 98)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 8598)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.3ms | Allocations: 9507)
+
+
+Started GET "/users?alt=test&class=rounded+mx-auto+d-block" for 127.0.0.1 at 2024-04-01 18:49:55 +0800
+Processing by UsersController#index as HTML
+  Parameters: {"alt"=>"test", "class"=>"rounded mx-auto d-block"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 5704)
+  Rendered layouts/_navigation.html.erb (Duration: 1.0ms | Allocations: 304)
+  Rendered layouts/_messages.html.erb (Duration: 0.8ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 35447)
+Completed 200 OK in 58ms (Views: 49.3ms | ActiveRecord: 4.1ms | Allocations: 38284)
+
+
+Started GET "/users?alt=test&class=rounded+mx-auto+d-block" for 127.0.0.1 at 2024-04-01 18:50:05 +0800
+Processing by UsersController#index as HTML
+  Parameters: {"alt"=>"test", "class"=>"rounded mx-auto d-block"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 5453)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 5876)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 3.4ms | Allocations: 9024)
+
+
+  
+ActionView::Template::Error (undefined method `image_for' for an instance of #<Class:0x00007663575e4bc0>):
+    10:         </div>
+    11:         <div class="card-body">
+    12:           <h5 class="card-title">
+    13:             <%= image_for gravatar_for(user,size:'100'),alt:user.username,
+    14:             class:"rounded mx-auto d-block" %>
+    15:           </h5>
+    16:         </div>
+  
+app/views/users/index.html.erb:13
+app/views/users/index.html.erb:4
+Started GET "/users?alt=test&class=rounded+mx-auto+d-block" for 127.0.0.1 at 2024-04-01 18:51:36 +0800
+Processing by UsersController#index as HTML
+  Parameters: {"alt"=>"test", "class"=>"rounded mx-auto d-block"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 4873)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 5296)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 3.3ms | Allocations: 8451)
+
+
+  
+ActionView::Template::Error (undefined method `image_for' for an instance of #<Class:0x0000766356d0bff8>):
+    10:         </div>
+    11:         <div class="card-body">
+    12:           <h5 class="card-title">
+    13:             <%= image_for gravatar_for(user,size:'100'),alt:user.username,
+    14:             class:"rounded mx-auto d-block" %>
+    15:           </h5>
+    16:           <p class="card-text"><%= pluralize(user.articles.count, "article") %></p>
+  
+app/views/users/index.html.erb:13
+app/views/users/index.html.erb:4
+Started GET "/users?alt=test&class=rounded+mx-auto+d-block" for 127.0.0.1 at 2024-04-01 18:51:48 +0800
+Processing by UsersController#index as HTML
+  Parameters: {"alt"=>"test", "class"=>"rounded mx-auto d-block"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mArticle Count (12.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mArticle Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mArticle Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mArticle Count (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mArticle Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 49.9ms | Allocations: 13741)
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 304)
+  Rendered layouts/_messages.html.erb (Duration: 0.5ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 88.0ms | Allocations: 43163)
+Completed 200 OK in 106ms (Views: 71.4ms | ActiveRecord: 27.6ms | Allocations: 46332)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2024-04-01 18:51:49 +0800
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.6ms | Allocations: 214)
+  Rendered users/_form.html.erb (Duration: 3.5ms | Allocations: 1793)
+  Rendered users/edit.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2691)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 9174)
+Completed 200 OK in 19ms (Views: 14.3ms | ActiveRecord: 0.4ms | Allocations: 11174)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2024-04-01 18:51:50 +0800
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.0ms | Allocations: 25)
+  Rendered users/_form.html.erb (Duration: 1.7ms | Allocations: 1008)
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1413)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 8219)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.3ms | Allocations: 9862)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-04-01 18:51:53 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 5.5ms | Allocations: 5383)
+  Rendered users/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 6425)
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 13569)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.6ms | Allocations: 15607)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-01 18:51:54 +0800
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 219)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 98)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 6897)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 8019)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-04-01 18:51:55 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 4.3ms | Allocations: 1331)
+  Rendered users/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1808)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 9270)
+Completed 200 OK in 35ms (Views: 30.1ms | ActiveRecord: 0.8ms | Allocations: 11236)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2024-04-01 18:51:55 +0800
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered users/_form.html.erb (Duration: 2.0ms | Allocations: 1336)
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1736)
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 8876)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.1ms | Allocations: 10847)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-04-01 18:51:57 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 3.2ms | Allocations: 1306)
+  Rendered users/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1778)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 9240)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.3ms | Allocations: 10885)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2024-04-01 18:51:58 +0800
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered users/_form.html.erb (Duration: 2.3ms | Allocations: 1320)
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1720)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 8860)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.3ms | Allocations: 10837)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-04-01 18:51:59 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 3.1ms | Allocations: 1307)
+  Rendered users/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1451)
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 92.1ms | Allocations: 8267)
+Completed 200 OK in 97ms (Views: 93.5ms | ActiveRecord: 0.9ms | Allocations: 9906)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2024-04-01 18:52:00 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 15.5ms | Allocations: 866)
+  Rendered users/show.html.erb within layouts/application (Duration: 22.9ms | Allocations: 1665)
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 110)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 8355)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 1.0ms | Allocations: 10000)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2024-04-01 18:52:04 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 7.0ms | Allocations: 3147)
+  Rendered users/show.html.erb within layouts/application (Duration: 9.0ms | Allocations: 3619)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 11081)
+Completed 200 OK in 59ms (Views: 45.0ms | ActiveRecord: 4.1ms | Allocations: 13059)
+
+
+Started GET "/users?alt=test&class=rounded+mx-auto+d-block" for 127.0.0.1 at 2024-04-01 18:53:24 +0800
+Processing by UsersController#index as HTML
+  Parameters: {"alt"=>"test", "class"=>"rounded mx-auto d-block"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 4816)
+  Rendered layouts/_navigation.html.erb (Duration: 1.9ms | Allocations: 1378)
+  Rendered layouts/_messages.html.erb (Duration: 0.6ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 34500)
+Completed 200 OK in 63ms (Views: 56.1ms | ActiveRecord: 3.0ms | Allocations: 37669)
+
+
+Started GET "/users?alt=test&class=rounded+mx-auto+d-block" for 127.0.0.1 at 2024-04-01 18:53:31 +0800
+Processing by UsersController#index as HTML
+  Parameters: {"alt"=>"test", "class"=>"rounded mx-auto d-block"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mArticle Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 46.5ms | Allocations: 14079)
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 305)
+  Rendered layouts/_messages.html.erb (Duration: 1.9ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 76.9ms | Allocations: 43851)
+Completed 200 OK in 86ms (Views: 57.9ms | ActiveRecord: 20.4ms | Allocations: 46678)
+
+
+Started GET "/users?alt=test&class=rounded+mx-auto+d-block" for 127.0.0.1 at 2024-04-01 18:53:32 +0800
+Processing by UsersController#index as HTML
+  Parameters: {"alt"=>"test", "class"=>"rounded mx-auto d-block"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mArticle Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (9.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 87.4ms | Allocations: 12776)
+  Rendered layouts/_navigation.html.erb (Duration: 1.0ms | Allocations: 303)
+  Rendered layouts/_messages.html.erb (Duration: 0.5ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 156.0ms | Allocations: 42732)
+Completed 200 OK in 164ms (Views: 134.6ms | ActiveRecord: 24.3ms | Allocations: 45901)
+
+
+Started GET "/users?alt=test&class=rounded+mx-auto+d-block" for 127.0.0.1 at 2024-04-01 18:54:24 +0800
+Processing by UsersController#index as HTML
+  Parameters: {"alt"=>"test", "class"=>"rounded mx-auto d-block"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 39.8ms | Allocations: 14013)
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 303)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 66.0ms | Allocations: 43973)
+Completed 200 OK in 72ms (Views: 54.8ms | ActiveRecord: 13.3ms | Allocations: 47134)
+
+
+Started GET "/users?alt=test&class=rounded+mx-auto+d-block" for 127.0.0.1 at 2024-04-01 18:54:53 +0800
+Processing by UsersController#index as HTML
+  Parameters: {"alt"=>"test", "class"=>"rounded mx-auto d-block"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 8231)
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 98)
+  Rendered layouts/_messages.html.erb (Duration: 0.5ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 15226)
+Completed 200 OK in 41ms (Views: 37.3ms | ActiveRecord: 3.0ms | Allocations: 15807)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-04-01 18:55:50 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/articles/_article.html.erb:3
+  Rendered articles/_article.html.erb (Duration: 31.0ms | Allocations: 5325)
+  Rendered users/show.html.erb within layouts/application (Duration: 45.7ms | Allocations: 6371)
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 97)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 13515)
+Completed 200 OK in 66ms (Views: 56.4ms | ActiveRecord: 3.6ms | Allocations: 15175)
+
+
+Started GET "/users?alt=test&class=rounded+mx-auto+d-block" for 127.0.0.1 at 2024-04-01 18:56:01 +0800
+Processing by UsersController#index as HTML
+  Parameters: {"alt"=>"test", "class"=>"rounded mx-auto d-block"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 29.0ms | Allocations: 14662)
+  Rendered layouts/_navigation.html.erb (Duration: 2.2ms | Allocations: 303)
+  Rendered layouts/_messages.html.erb (Duration: 6.6ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 141.3ms | Allocations: 44708)
+Completed 200 OK in 162ms (Views: 139.8ms | ActiveRecord: 8.8ms | Allocations: 47873)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:56:02 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 56.6ms | Allocations: 9569)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 85.6ms | Allocations: 16886)
+Completed 200 OK in 87ms (Views: 83.4ms | ActiveRecord: 3.1ms | Allocations: 17797)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:56:03 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (14.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mArticle Count (2.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 40.1ms | Allocations: 9244)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 98)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 47.9ms | Allocations: 15577)
+Completed 200 OK in 50ms (Views: 29.3ms | ActiveRecord: 19.9ms | Allocations: 16166)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:56:07 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 24.9ms | Allocations: 14339)
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 305)
+  Rendered layouts/_messages.html.erb (Duration: 0.6ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 65.8ms | Allocations: 44134)
+Completed 200 OK in 70ms (Views: 58.9ms | ActiveRecord: 8.5ms | Allocations: 47295)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 18:56:19 +0800
+Processing by UsersController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mArticle Count (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (2.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/views/users/index.html.erb:16
+  [1m[36mArticle Count (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 86.6ms | Allocations: 12104)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 130.1ms | Allocations: 21739)
+Completed 200 OK in 132ms (Views: 114.8ms | ActiveRecord: 16.3ms | Allocations: 22733)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-04-01 19:00:08 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1315)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 2076)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 5257)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="text-center pt-4">Ruby Blogger</h1>
+
+<div class="container .bg-secondary-subtle">
+  <% @users.each do |user| %>
+  <div class="row justify-content-center">
+    <div class="col-8 mt-4">
+      <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+        <div class="card-header fst-italic">
+          by <%=link_to user.username, user_path(user) %>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= image_tag gravatar_for(user,size:'100'),alt:user.username,
+            class:"rounded mx-auto d-block" %>
+          </h5>
+          <p class="card-text"><%= (user.articles.count %></p>
+          <%= link_to "View profile", user, class: "btn btn-outline-success" %>
+          <%= link_to "Edit profile", edit_user_path(user), class: "btn
+          btn-outline-info" %>
+        </div>
+        <div class="card-footer text-muted">
+            <small>Joined <%= time_ago_in_words(user.created_at) %> ago</small>
+          </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+):
+1:    <h1 class="text-center pt-4">Ruby Blogger</h1>
+2:    
+3:    <div class="container .bg-secondary-subtle">
+4:      <% @users.each do |user| %>
+5:      <div class="row justify-content-center">
+6:        <div class="col-8 mt-4">
+7:          <div class="card text-center shadow mb-5 bg-body-tertiary rounded">
+8:            <div class="card-header fst-italic">
+9:              by <%=link_to user.username, user_path(user) %>
+10:            </div>
+11:            <div class="card-body">
+12:              <h5 class="card-title">
+13:                <%= image_tag gravatar_for(user,size:'100'),alt:user.username,
+14:                class:"rounded mx-auto d-block" %>
+15:              </h5>
+16:              <p class="card-text"><%= (user.articles.count %></p>
+17:              <%= link_to "View profile", user, class: "btn btn-outline-success" %>
+18:              <%= link_to "Edit profile", edit_user_path(user), class: "btn
+19:              btn-outline-info" %>
+20:            </div>
+21:            <div class="card-footer text-muted">
+22:                <small>Joined <%= time_ago_in_words(user.created_at) %> ago</small>
+23:              </div>
+24:          </div>
+25:        </div>
+26:      </div>
+27:      <% end %>
+28:    </div>
+  
+app/views/users/index.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:31: syntax error, unexpected `end', expecting ')'
+Started GET "/users" for 127.0.0.1 at 2024-04-01 19:00:34 +0800
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mArticle Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mArticle Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 24.3ms | Allocations: 12296)
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 303)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 185)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 81.6ms | Allocations: 41711)
+Completed 200 OK in 94ms (Views: 76.2ms | ActiveRecord: 7.9ms | Allocations: 44880)
+
+
