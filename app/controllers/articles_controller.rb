@@ -14,7 +14,6 @@ class ArticlesController < ApplicationController
 
   def create
     # render plain: params[:article]
-
     @article = Article.new(article_params)
     @article.user_id = 1
     if @article.save

@@ -69,3 +69,5 @@ end
 
 gem 'bootstrap'
 gem 'sassc-rails'
+
+gem 'reline', '~> 0.5.0'
