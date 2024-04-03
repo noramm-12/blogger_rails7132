@@ -20,9 +20,4 @@ module ApplicationHelper
   # compile URL which can be used in <img src="RIGHT_HERE"...
   gravatar_url = "https://www.gravatar.com/avatar/#{hash}?s=#{size}"
   end
-
-  #是否登入
-  def logged_in?
-    !!current_user
-  end
 end
