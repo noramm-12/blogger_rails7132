@@ -19,10 +19,9 @@
             <%= link_to "View", article_path(article), class:"btn
             btn-outline-success me-2" %> <% if logged_in? && article.user ==
             current_user %> <%= link_to "Edit", edit_article_path(article),
-            class:"btn btn-outline-primary me-2" %> <%= button_to "Delete",
-            article_path(article), class:"btn btn-outline-danger", method:
-            :delete, onclick: "return confirm('Are you sure you want to delete
-            this article?')" %> <% end %>
+            class:"btn btn-outline-primary me-2" %> <%= link_to 'Delete',
+            article_path(article), class:"btn btn-outline-danger", data: {
+            turbo_method: :delete,turbo_confirm: "Are you sure?"}%> <% end %>
           </div>
         </div>
         <div class="card-footer text-body-secondary">
