@@ -17,7 +17,7 @@ class ArticlesController < ApplicationController
   def create
     # render plain: params[:article]
     @article = Article.new(article_params)
-    @article.user= current_user
+    @article.user = current_user
     if @article.save
       flash[:notice] = 'Article was created successfully.' # sending success message by flash
       redirect_to article_path(@article) # prefix:article => show.html.erb
@@ -51,13 +51,14 @@ class ArticlesController < ApplicationController
     # params[:article]
     params.require(:article).permit(:title, :description)
   end
+
   def set_article
     @article = Article.find(params[:id])
   end
+
   def require_same_user
-    if current_user!= @article.user
-      flash[:alert]="You can only edit or delete your own article"
-      redirect_to @article
-    end
+    if current_user != @article.user && !current_user.admin?
+    flash[:alert] = 'You can only edit or delete your own article'
+    redirect_to @article
   end
 end
