@@ -1,10 +1,11 @@
 class CategoriesController < ApplicationController
   def index
-
+    @categories = Category.paginate(page: params[:page], per_page: 5)
+    # @categories=Category.all
   end
 
   def show
-    @category=Category.find(params[:id])
+    @category = Category.find(params[:id])
   end
 
   def new
@@ -29,6 +30,7 @@ class CategoriesController < ApplicationController
   # end
 
   private
+
   def category_params
     # params[:article]
     params.require(:category).permit(:name)

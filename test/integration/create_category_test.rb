@@ -19,7 +19,7 @@ class CreateCategoryTest < ActionDispatch::IntegrationTest
     assert_difference('Category.count',0) do
       post categories_url, params: { category: { name: ' ' } }
     end
-    assert_match "errors",response.body #確保響應體中包含新創建的類別名稱
     assert_select "div.alert"
+    assert_match "errors",response.body #確保響應體中包含新創建的類別名稱
   end
 end

@@ -34,7 +34,8 @@
                             <% end %>
           </div>
           <div class="card-footer text-muted">
-            <small>Joined <%= time_ago_in_words(user.created_at) %> ago</small>
+            <small>Joined <%= time_ago_in_words(user.created_at) %> ago ,
+              edited <%= time_ago_in_words(user.updated_at) %> ago</small>
           </div>
         </div>
       </div>
