@@ -73,7 +73,10 @@ end
 
 gem 'bootstrap'
 gem 'sassc-rails'
+gem 'execjs'
+
+
 
 # Ruby LSP
-gem 'rubocop'
-gem 'ruby-lsp'
+# gem 'rubocop'
+# gem 'ruby-lsp'
