@@ -54,6 +54,8 @@ class ArticlesController < ApplicationController
 
   def set_article
     @article = Article.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    redirect_to root_path
   end
 
   def require_same_user

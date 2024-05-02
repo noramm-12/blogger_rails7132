@@ -52,6 +52,8 @@ class UsersController < ApplicationController
 
   def set_user
     @user = User.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    redirect_to root_path
   end
 
   def require_same_user
