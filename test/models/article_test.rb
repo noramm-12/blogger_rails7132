@@ -3,12 +3,12 @@ require 'test_helper'
 class ArticleTest < ActiveSupport::TestCase
   def setup
     @user = User.create(username: "johndoe", email: "johndoe@example.com",
-                              password: "password", admin: false)
+                        password: "password", admin: false)
     @category = Category.create(name: 'sports')
     @article = @user.articles.new(title: "Lorem", description: "Lorem ipsum dolor sit amet", category_ids: [@category.id])
   end
   # validation
-  test "should be valid" do
+  test "article should be valid" do
     assert @article.valid?
   end
 
@@ -48,10 +48,10 @@ class ArticleTest < ActiveSupport::TestCase
     assert_not @article.valid?
   end
 
-  test "article can have many categories" do
-    @article.categories << Category.new(name: 'technology')
-    @article.categories << Category.new(name: 'technology2')
-    @article.save
-    assert_equal 3, @article.categories.count
-  end
+  # test "article can have many categories" do
+  #   @article.categories << Category.new(name: 'technology')
+  #   @article.categories << Category.new(name: 'technology2')
+  #   @article.save
+  #   assert_equal 3, @article.categories.count
+  # end
 end

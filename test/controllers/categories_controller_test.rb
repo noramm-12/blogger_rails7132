@@ -4,7 +4,9 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
   setup do
     # @category = categories(:one)
     @category = Category.create(name: 'Sports')
-    @admin_user = User.create(username: "johndoe", email: "johndoe@example.com",
+    @user = User.create(username: "johndoe", email: "johndoe@example.com",
+                              password: "password", admin: false)
+    @admin_user = User.create(username: "admin", email: "admin@example.com",
                               password: "password", admin: true)
   end
 
@@ -33,7 +35,7 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to category_url(Category.last)
   end
 
-  test "should get edit " do
+  test "should get edit" do
     sign_in_as(@admin_user)
     get edit_category_url(@category)
     assert_response :success
@@ -41,10 +43,11 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
 
   test "should update category" do
     sign_in_as(@admin_user)
-    patch category_url(@category), params: { category: { name: 'Travel' } }
+    patch category_url(@category), params: { category: { name: 'updated' } }
     assert_redirected_to category_url(@category)
+    @category.reload
+    assert_equal "updated", @category.name
   end
-  #多對多測試
 
 #admin相關測試
   test 'should not get new category if not admin' do

@@ -21,7 +21,6 @@ class ArticlesController < ApplicationController
     if @article.save
       flash[:notice] = 'Article was created successfully.' # sending success message by flash
       redirect_to article_path(@article) # prefix:article => show.html.erb
-      # redirect_to @article
     else
       render 'new', status: :unprocessable_entity # new.html erb
     end
