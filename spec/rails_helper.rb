@@ -64,4 +64,13 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+  config.before(:suite) do                    # 開始測試時的處理
+    DatabaseCleaner.strategy = :transaction   # 測試執行中使用 transaction
+    DatabaseCleaner.clean_with(:truncation)   # 測試前，使用 truncation 進行清除
+  end
+  config.around(:each) do |example|           # 樣本執行前後的處理
+    DatabaseCleaner.cleaning do               # 清潔完成後執行範例
+      example.run
+    end
+  end
 end

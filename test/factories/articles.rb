@@ -3,7 +3,6 @@
 #     title { "title" }
 #     description { "description" }
 #     user
-#     category
 #   end
 # end
 
