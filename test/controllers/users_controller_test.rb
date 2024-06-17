@@ -36,25 +36,52 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  # test "should update user" do
-  #   sign_in_as(@user)
-  #   patch user_url(@user), params: { username: "update", email: "johndoe@example.com",
-  #                                    password: "password", admin: false }
-  #   assert_redirected_to user_url(@user)
-  # end
-  #
+  test "should update user" do
+    sign_in_as(@user)
+    patch user_url(@user), params: {user:{ username: "newusername", email: "johndoe@example.com",
+                                     password: "password", admin: false }}
+    assert_redirected_to user_url(@user)
+    @user.reload
+    assert_equal "newusername", @user.username
+  end
   # test "should destroy user" do
-  #   @category = Category.create(name: 'sports')
-  #   @article = Article.create(title: "Lorem", description: "Lorem ipsum dolor sit amet", user:@user, category_ids: [@category.id])
-  #
-  #   sign_in_as(@user)
-  #   assert_difference("User.count", -1) do
-  #     assert_difference('Article.count', -@user.articles.count) do
-  #       delete user_url(@user)
-  #     end
+  #   sign_in_as @user  # Sign in as @user
+  #   assert_difference('User.count', -1) do
+  #     delete user_url(@user)
   #   end
   #
-  #   assert_nil session[:user_id]
-  #   assert_redirected_to articles_path
+  #   assert_redirected_to articles_url
   # end
+  #admin
+  test "should not allow edit if not logged in" do
+    get edit_user_url(@user)
+    assert_redirected_to login_url
+  end
+
+  test "should not allow update if not logged in" do
+    patch user_url(@user), params: {user:{ username: "newusername", email: "johndoe@example.com",
+                                           password: "password", admin: false }}
+    assert_redirected_to login_url
+    @user.reload
+    refute_equal "newusername", @user.username
+  end
+  test "should not allow edit if not the same user" do
+    @other_user = User.create(username: "johndoe2", email: "johndoe2@example.com",
+                                         password: "password", admin: false) # Assuming another user exists
+    sign_in_as @other_user
+    get edit_user_url(@user)
+    assert_redirected_to user_url(@user)
+    assert_equal 'You can only edit your own profile', flash[:alert]
+  end
+
+  test "should not allow update if not the same user" do
+    @other_user = User.create(username: "johndoe2", email: "johndoe2@example.com",
+                        password: "password", admin: false)
+    sign_in_as @other_user
+    patch user_url(@user), params: { user: { username: "newusername" } }
+    assert_redirected_to user_url(@user)
+    assert_equal 'You can only edit your own profile', flash[:alert]
+    @user.reload
+    refute_equal "newusername", @user.username
+  end
 end

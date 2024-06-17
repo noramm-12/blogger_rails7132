@@ -48,10 +48,10 @@ class ArticleTest < ActiveSupport::TestCase
     assert_not @article.valid?
   end
 
-  # test "article can have many categories" do
-  #   @article.categories << Category.new(name: 'technology')
-  #   @article.categories << Category.new(name: 'technology2')
-  #   @article.save
-  #   assert_equal 3, @article.categories.count
-  # end
+  test "article can have many categories" do
+    @article.categories << Category.new(name: 'technology')
+    @article.categories << Category.new(name: 'technology2')
+    @article.save
+    assert_equal 3, @article.categories.count
+  end
 end

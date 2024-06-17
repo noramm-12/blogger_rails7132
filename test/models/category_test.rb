@@ -2,7 +2,9 @@ require 'test_helper'
 
 class CategoryTest < ActiveSupport::TestCase
   def setup
-    @category = create(:category)
+    # @category = create(:category)
+    @category = Category.create(name: 'Sports')
+
   end
 
   #validation
@@ -15,7 +17,7 @@ class CategoryTest < ActiveSupport::TestCase
   end
 
   test 'name should be unique' do
-    @category2 = Category.create(name: 'Fashion')
+    @category2 = Category.create(name: 'Sports')
     assert_not @category2.valid?
   end
 
@@ -31,11 +33,14 @@ class CategoryTest < ActiveSupport::TestCase
 
   # relation
   test "category can have many articles" do
-    @user = create(:user)
+    @user = User.create(username: "johndoee", email: "johndoe@example.com",
+                        password: "password", admin: false)
 
     2.times do
-      article= build(:article,user:@user)
-      @category.articles << article
+      # article= build(:article,user:@user)
+      @article = @user.articles.new(title: "Lorem", description: "Lorem ipsum dolor sit amet")
+      @category.articles << @article
+      @category.save
     end
     assert_equal 2, @category.articles.count
   end

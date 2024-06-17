@@ -7,7 +7,8 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'rspec/rails'
 #別忘記要在 `spec/rails_helper.rb` 引入 `spec/support/` 目錄下的所有檔案：
 # Add additional requires below this line. Rails is not loaded until this point!
-Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
+# Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
+Dir[Rails.root.join('spec/support/**/*.rb')].sort.each { |file| require file }
 # Dir["spec/support/**.rb"].each { |f| require f }
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -64,6 +65,11 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+  #啟用login method
+  config.include LoginMacros, type: :controller
+  config.include Rails.application.routes.url_helpers#, type: :controller
+  # config.include RSpec::Rails::ControllerExampleGroup, type: :controller
+  #database cleaner
   config.before(:suite) do                    # 開始測試時的處理
     DatabaseCleaner.strategy = :transaction   # 測試執行中使用 transaction
     DatabaseCleaner.clean_with(:truncation)   # 測試前，使用 truncation 進行清除
