@@ -2,9 +2,7 @@ require 'test_helper'
 
 class CategoryTest < ActiveSupport::TestCase
   def setup
-    # @category = create(:category)
-    @category = Category.create(name: 'Sports')
-
+    @category = create(:category)
   end
 
   #validation
@@ -33,12 +31,11 @@ class CategoryTest < ActiveSupport::TestCase
 
   # relation
   test "category can have many articles" do
-    @user = User.create(username: "johndoee", email: "johndoe@example.com",
-                        password: "password", admin: false)
+    @user = create(:no_admin_user)
 
     2.times do
-      # article= build(:article,user:@user)
-      @article = @user.articles.new(title: "Lorem", description: "Lorem ipsum dolor sit amet")
+      # @article = @user.articles.new(title: "Lorem", description: "Lorem ipsum dolor sit amet")
+      @article= build(:article,user:@user)
       @category.articles << @article
       @category.save
     end

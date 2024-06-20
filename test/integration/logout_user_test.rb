@@ -2,8 +2,7 @@ require "test_helper"
 
 class LogoutUserTest < ActionDispatch::IntegrationTest
   setup do
-    @user = User.create(username: "johndoe", email: "johndoe@example.com",
-                        password: "password", admin: false)
+    @user=create(:no_admin_user)
   end
   test "should logout user" do
     delete logout_url

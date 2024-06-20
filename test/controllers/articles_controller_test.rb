@@ -2,13 +2,10 @@ require "test_helper"
 
 class ArticlesControllerTest < ActionDispatch::IntegrationTest
   setup do
-    # @article = articles(:one)
-    @user = User.create(username: "johndoe", email: "johndoe@example.com",
-                        password: "password", admin: false)
-    @admin_user = User.create(username: "admin", email: "admin@example.com",
-                              password: "password", admin: true)
-    @category = Category.create(name: 'sports')
-    @article = Article.create(title: "Lorem", description: "Lorem ipsum dolor sit amet", user:@user, category_ids: [@category.id])
+        @category = create(:category)
+        @user = create(:no_admin_user)
+        @admin_user = create(:admin_user)
+        @article = create(:article,user:@user,category_ids: [@category.id])
   end
 
   test "should get index" do
@@ -25,7 +22,7 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
   test "should create article" do
     sign_in_as(@user)
     assert_difference("Article.count",1) do
-      post articles_url, params: { article: {title: "Lorem", description: "Lorem ipsum dolor sit amet", user:@user,category_ids: [@category.id]  } }
+      post articles_url, params: { article: attributes_for(:article,user:@user) }
     end
 
     assert_redirected_to article_url(Article.last)
@@ -70,7 +67,6 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "admin can delete other user's article" do
-    # @other_article = Article.create(title: "Lorem", description: "Lorem ipsum dolor sit amet", user:@user, category_ids: [@category.id])
     sign_in_as(@admin_user)
     assert_difference('Article.count', -1) do
       delete article_url(@article)
@@ -79,8 +75,7 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should not update other user's article if not admin" do
-    @other_user=User.create(username: "other", email: "other@example.com",
-                            password: "password", admin: false)
+    @other_user=create(:no_admin_user, :no_admin_user2)
     sign_in_as(@other_user)
     original_title = @article.title
     original_description = @article.description
@@ -93,8 +88,8 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
     assert_equal "You can only edit or delete your own article", flash[:alert]
   end
   test "should not delete other user's article if not admin" do
-    @other_user=User.create(username: "other", email: "other@example.com",
-                            password: "password", admin: false)
+    @other_user=create(:no_admin_user, :no_admin_user2)
+
     sign_in_as(@other_user)
     assert_no_difference('Article.count') do
       delete article_url(@article)

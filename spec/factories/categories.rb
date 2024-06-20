@@ -1,5 +1,5 @@
-FactoryBot.define do
-  factory :category do
-    name { "Fashion" }
-  end
-end
+# FactoryBot.define do
+#   factory :category do
+#     name { "Fashion" }
+#   end
+# end
