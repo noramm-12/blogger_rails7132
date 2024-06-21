@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   before_action :require_user, only: %i[edit update]
   before_action :require_same_user, only: %i[edit update destroy]
   def show
-    @articles = @user.articles.paginate(page: params[:page], per_page: 5)
+    @articles = @user.articles.sorted.paginate(page: params[:page], per_page: 5)
   end
 
   def index
