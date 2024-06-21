@@ -4,6 +4,7 @@ class CreateCategoryTest < ActionDispatch::IntegrationTest
   setup do
     @admin_user = create(:admin_user)
   end
+
   test "get new category form and create category" do
     sign_in_as(@admin_user)
     get "/categories/new"
