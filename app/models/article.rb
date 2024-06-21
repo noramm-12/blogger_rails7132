@@ -8,5 +8,5 @@ class Article < ApplicationRecord
   has_many :article_categories
   has_many :categories,through: :article_categories
 
-  scope :sorted,->{order(edited_at: desc)}
+  scope :sorted,->{order(updated_at: :desc)}
 end
