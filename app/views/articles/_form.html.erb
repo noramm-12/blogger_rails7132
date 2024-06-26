@@ -10,9 +10,9 @@
           </div>
         </div>
         <div class="row mb-3">
-          <%= f.label :description,class:"form-label col-2"%>
+          <%= f.label :content,class:"form-label col-2"%>
           <div class="col-10">
-            <%= f.text_area :description,rows:10 ,class:"form-control shadow rounded",placeholder:"Description of article" %>
+            <%= f.rich_text_area :content,rows:10 ,class:"form-control shadow rounded",placeholder:"content of article" %>
           </div>
         </div>
         <div class="row mb-3">

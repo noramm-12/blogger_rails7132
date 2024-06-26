@@ -17,7 +17,8 @@
         </div>
         <div class="card-body">
           <div class="card-text text-start">
-            <%= simple_format(@article.description) %>
+            <%= @article.content %>
+
           </div>
           <% if logged_in? && (@article.user==current_user || current_user.admin?) %>
             <div id="button-group" class="justify-content-center d-flex">
