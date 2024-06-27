@@ -2,7 +2,7 @@
 
 class Article < ApplicationRecord
   validates :title, presence: true, length: { minimum: 1, maximum: 10 }
-  validates :content, presence: true, length: { minimum: 1, maximum: 100 }
+  validates :content, presence: true, length: { minimum: 1, maximum: 10000}
 
   belongs_to :user
   has_many :article_categories

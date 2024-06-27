@@ -41,7 +41,7 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
 
   test "should update article" do
     sign_in_as(@user)
-    patch article_url(@article), params: { article: {title: "update", description: "Lorem ipsum dolor sit amet", user:@user,category_ids: [@category.id]  } }
+    patch article_url(@article), params: { article: {title: "update", content: "Lorem ipsum dolor sit amet", user:@user,category_ids: [@category.id]  } }
     assert_redirected_to article_url(@article)
   end
 
@@ -62,7 +62,7 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
 
   test "admin can update other user's article" do
     sign_in_as(@admin_user)
-    patch article_url(@article), params: { article: {title: "update", description: "Lorem ipsum dolor sit amet", user:@user,category_ids: [@category.id]  } }
+    patch article_url(@article), params: { article: {title: "update", content: "Lorem ipsum dolor sit amet", user:@user,category_ids: [@category.id]  } }
     assert_redirected_to article_url(@article)
   end
 
@@ -78,13 +78,13 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
     @other_user=create(:no_admin_user, :no_admin_user2)
     sign_in_as(@other_user)
     original_title = @article.title
-    original_description = @article.description
+    original_content = @article.content
 
-    patch article_url(@article), params: { article: { title: "Update Attempt", description: "Update attempt", user: @other_user, category_ids: [@category.id] } }
+    patch article_url(@article), params: { article: { title: "Update Attempt", content: "Update attempt", user: @other_user, category_ids: [@category.id] } }
 
     @article.reload
     assert_equal original_title, @article.title
-    assert_equal original_description, @article.description
+    assert_equal original_content, @article.content
     assert_equal "You can only edit or delete your own article", flash[:alert]
   end
   test "should not delete other user's article if not admin" do

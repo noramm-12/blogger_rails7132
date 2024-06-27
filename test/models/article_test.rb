@@ -5,7 +5,7 @@ class ArticleTest < ActiveSupport::TestCase
     @category = create(:category)
     @user = create(:no_admin_user)
     @article = create(:article,user:@user,category_ids: [@category.id])
-    # @article = @user.articles.new(title: "Lorem", description: "Lorem ipsum dolor sit amet", category_ids: [@category.id])
+    # @article = @user.articles.new(title: "Lorem", content: "Lorem ipsum dolor sit amet", category_ids: [@category.id])
   end
   # validation
   test "article should be valid" do
@@ -17,8 +17,8 @@ class ArticleTest < ActiveSupport::TestCase
     assert_not @article.valid?
   end
 
-  test "description should be present" do
-    @article.description = " "
+  test "content should be present" do
+    @article.content= " "
     assert_not @article.valid?
   end
 
@@ -32,13 +32,13 @@ class ArticleTest < ActiveSupport::TestCase
     assert_not @article.valid?
   end
 
-  test "description should not be too short" do
-    @article.description = "a" * 0
+  test "content should not be too short" do
+    @article.content = "a" * 0
     assert_not @article.valid?
   end
 
-  test "description should not be too long" do
-    @article.description = "a" * 101
+  test "content should not be too long" do
+    @article.content = "a" * 10001
     assert_not @article.valid?
   end
 

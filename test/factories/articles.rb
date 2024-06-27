@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :article do
     title { "title" }
-    description { "description" }
+    content { "description" }
     # association :no_admin_user
     association :user, factory: :no_admin_user
 

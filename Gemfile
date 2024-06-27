@@ -26,8 +26,6 @@ gem 'stimulus-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
-# gem 'devise'
-
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
@@ -37,7 +35,7 @@ gem 'jbuilder'
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate', '~> 4.0'
-gem 'reline', '~> 0.5.0'
+# gem 'reline', '~> 0.5.0'
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -73,14 +71,15 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
   gem 'selenium-webdriver'
-  gem 'shoulda-matchers', '~> 6.0'
+  # gem 'shoulda-matchers', '~> 6.0'
   gem 'database_cleaner', '~> 2.0', '>= 2.0.2'
 end
 
 gem 'bootstrap'
 gem 'sassc-rails'
 
+gem "aws-sdk-s3", require: false
+
 
 # Ruby LSP
 gem 'rubocop'
-# gem 'ruby-lsp'
