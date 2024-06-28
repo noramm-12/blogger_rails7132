@@ -28,7 +28,7 @@ class ArticleTest < ActiveSupport::TestCase
   end
 
   test "title should not be too long" do
-    @article.title = "a" * 11
+    @article.title = "a" * 101
     assert_not @article.valid?
   end
 
@@ -38,7 +38,7 @@ class ArticleTest < ActiveSupport::TestCase
   end
 
   test "content should not be too long" do
-    @article.content = "a" * 10001
+    @article.content = "a" * 10000001
     assert_not @article.valid?
   end
 

@@ -1,24 +1,65 @@
-# README
+## 測試帳號
+- normal user
+    - 帳號:test@gmail.com
+    - 密碼:test
+- admin user
+    - 帳號:nora186130@gmail.com
+    - 密碼:nora
+## 實踐技術
+- Rails + PostgreSQL
+- Vanilla JS
+- Render+Amason S3
+- MiniTest
+## 主要功能概述
+基本上以三個圍繞三個對象為主(文章、標籤、使用者)
+- 實作登入登出功能(不使用devise等套件，手動實作)
+- 控制每頁的顯示數量(5)，若超過數量便不顯示
+- 文章與標籤是多對多關聯
+- 在文章目錄要控制顯示的字數，點擊貼文觀看每則貼文的詳細內容
+- 可為文章加上分類標籤，並以標籤/作者進行篩選
+-  文章根據編輯時間排序
+- 文章編輯支持粗體、斜體、超連結不同方格的編輯方式(actionText)
+- 文章可以上傳圖片
+- 表單送出後，根據提交狀顯示不同訊息與顏色(成功綠色，失敗紅色)，通常成功提交會重新導向，但是失敗會保持在原頁，確保資料不被覆蓋
+- 驗證是前後端皆有驗證
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### 另外權限功能
+- 定義使用者角色：管理者(admin)＆一般使用者
+- 不使用套件，手動實作
+- 根據登入狀態:
+    - 上排菜單欄顯示" login " or 使用者名稱
+    - 若是admin要顯示admin
 
-Things you may want to cover:
+**對於任何訪客，進入到首頁
+- 可以註冊帳號
+- 可以登入帳號
+- 可以看到所有貼文的
+    - 標題
+    - 標籤
+    - 內容
+    - 作者
+- 可以觀看所有的作者與標籤
 
-* Ruby version
+**對於已經註冊的訪客：**
+- 可以創建、修改、刪除自己的貼文標題、內容、標籤
 
-* System dependencies
+**對於admin權限的訪客:**
+- 不只可以創建、修改、刪除自己的貼文，還具有權限修改其他使用者的貼文題目、內容與標籤
+- 能夠刪除別人的文章
+- 管理者有權限直接新增標籤與修改標籤(會影響到其他文章)
+- 僅限於發布之文章
+- 可以直接刪除使用者(但是不能修改使用者資料)
 
-* Configuration
+### 註記
+DRY code
+自訂 Action View Helper
+view 重複使用
+before_action
+private
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+
