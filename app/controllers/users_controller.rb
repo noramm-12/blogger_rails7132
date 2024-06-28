@@ -57,7 +57,7 @@ class UsersController < ApplicationController
   end
 
   def require_same_user
-    if current_user != @user && !current_user.admin?
+    if current_user != @user
     flash[:alert] = 'You can only edit your own profile'
     redirect_to @user
     end

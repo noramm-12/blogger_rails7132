@@ -43,10 +43,6 @@ class ArticlesController < ApplicationController
     @article.destroy
     redirect_to articles_path # prefix:articles => index.html.erb
   end
-  # def search
-  #   search = "%#{params[:search]}%"
-  #   @articles = Post.where("title LIKE ?", search)
-  # end
 
   private
 
