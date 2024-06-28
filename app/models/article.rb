@@ -9,6 +9,9 @@ class Article < ApplicationRecord
   has_many :categories,through: :article_categories
 
   scope :sorted,->{order(updated_at: :desc)}
-
+  scope :search_article_title, ->(title){
+    sql='title LIKE ?'
+    where(sql,"%#{title}%")
+  }
   has_rich_text :content
 end
