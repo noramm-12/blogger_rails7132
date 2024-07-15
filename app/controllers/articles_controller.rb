@@ -8,14 +8,16 @@ class ArticlesController < ApplicationController
       @articles = Article.sorted.paginate(page: params[:page], per_page: 5)
   end
 
-  def show; end
+  def show;
+    #debugger
+    # render plain: params[:id]
+  end
 
   def new
     @article = Article.new
   end
 
   def create
-    # render plain: params[:article]
     @article = Article.new(article_params)
     @article.user = current_user
     if @article.save
@@ -24,8 +26,6 @@ class ArticlesController < ApplicationController
     else
       render 'new', status: :unprocessable_entity # new.html erb
     end
-
-    # render plain: @article.inspect
   end
 
   def edit; end

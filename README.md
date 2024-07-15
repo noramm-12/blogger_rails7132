@@ -10,11 +10,12 @@ https://blogger-rails7132v2.onrender.com/articles
     - 密碼:nora
 ## 實踐技術
 - Rails 7 + PostgreSQL
+- Bootstrap 5.3.2
 - Vanilla JS
 - Render+Amason S3
-- MiniTest
+- MiniTest + FactoryBot
 ## 主要功能概述
-基本上以三個圍繞三個對象為主(文章、標籤、使用者)
+基本上三個對象(文章、標籤、使用者),以實踐功能為導向（界面排版可能比較粗糙..
 - 實作登入登出功能(不使用devise等套件，手動實作)
 - 控制每頁的顯示數量(5)，若超過數量便不顯示
 - 文章與標籤是多對多關聯
@@ -59,6 +60,7 @@ DRY code
 view 重複使用
 before_action
 private
+test
 
 
 

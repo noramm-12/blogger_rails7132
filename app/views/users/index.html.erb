@@ -29,7 +29,7 @@
               <% end %>
               <% if current_user.admin? %>
                 <%= link_to "Delete user", user_path(user), class: "btn btn-outline-danger", method: :delete,
-                            data: {confirm: "Are you sure you want to delete the user account and all associated articles?"} %>
+                            data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to delete the user account and all associated articles?"} %>
               <% end %>
             <% end %>
           </div>
